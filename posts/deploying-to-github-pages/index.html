@@ -61,7 +61,7 @@ A quick summary of deploying Hugo this generated site to Github pages (and hence
   "headline": "Deploying to Github Pages",
   "description" : " A quick summary of deploying Hugo this generated site to Github pages (and hence hdyson.dev) via the instructions from the Hugo docs. ",
   "inLanguage" : "en",
-  "wordCount":  73 ,
+  "wordCount":  105 ,
   "datePublished" : "2019-10-27T19:52:03",
   "dateModified" : "2019-10-27T19:52:03",
   "image" : "https:\/\/hdyson.github.io\/",
@@ -247,7 +247,7 @@ To summarise:
 </li>
 <li>
 <p>
-Clone the source project.
+Clone the source project.  Note the <code>baseURL</code> in the config should point to the Github URL even when making the site available via a different URL.
 </p>
 </li>
 <li>
@@ -265,7 +265,12 @@ Add the built (by default, <code>./public</code>) folder as a submodule, pointin
 </li>
 <li>
 <p>
-Finally, add and run the <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script">deploy.sh</a> script.
+Add and run the <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script">deploy.sh</a> script.
+</p>
+</li>
+<li>
+<p>
+Finally, tweak the deployed repository settings as per the Github <a href="https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site#creating-your-site">instructions</a>.
 </p>
 </li>
 </ol>
@@ -294,7 +299,7 @@ Finally, add and run the <a href="https://gohugo.io/hosting-and-deployment/hosti
                   <ul>
                 
                 
-                    <li><a href="/posts/theme-setup/">Theme Setup</a></li>
+                    <li><a href="/posts/theme-setup/">Theme setup</a></li>
                 
                     <li><a href="/posts/hugo-setup/">Hugo setup in org format</a></li>
                 
@@ -308,7 +313,7 @@ Finally, add and run the <a href="https://gohugo.io/hosting-and-deployment/hosti
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://hdyson.github.io/posts/complete-emacs-setup/" data-toggle="tooltip" data-placement="top" title="Complete Emacs Setup">&larr; Previous Post</a>
+              <a href="https://hdyson.github.io/posts/complete-emacs-setup/" data-toggle="tooltip" data-placement="top" title="Complete emacs setup">&larr; Previous Post</a>
             </li>
           
           
