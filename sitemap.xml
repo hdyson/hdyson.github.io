@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://hdyson.dev/tags/blog-setup/</loc>
+    <lastmod>2019-10-27T19:52:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.dev/posts/deploying-to-github-pages/</loc>
+    <lastmod>2019-10-27T19:52:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.dev/tags/deployment/</loc>
+    <lastmod>2019-10-27T19:52:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.dev/</loc>
+    <lastmod>2019-10-27T19:52:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.dev/tags/github/</loc>
+    <lastmod>2019-10-27T19:52:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.dev/posts/</loc>
+    <lastmod>2019-10-27T19:52:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.dev/tags/</loc>
+    <lastmod>2019-10-27T19:52:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.dev/posts/complete-emacs-setup/</loc>
+    <lastmod>2019-10-15T20:34:49+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.dev/tags/emacs/</loc>
+    <lastmod>2019-10-15T20:34:49+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.dev/tags/hugo/</loc>
+    <lastmod>2019-10-13T20:47:12+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.dev/tags/theme/</loc>
+    <lastmod>2019-10-13T20:47:12+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.dev/posts/theme-setup/</loc>
+    <lastmod>2019-10-13T20:47:12+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.dev/posts/hugo-setup/</loc>
+    <lastmod>2019-10-12T17:05:21+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.dev/categories/</loc>
+  </url>
+  
+</urlset>
