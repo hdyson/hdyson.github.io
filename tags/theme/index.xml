@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Theme on Exploring code</title>
-    <link>https://hdyson.dev/tags/theme/</link>
+    <link>https://hdyson.github.io/tags/theme/</link>
     <description>Recent content in Theme on Exploring code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Oct 2019 20:47:12 +0100</lastBuildDate>
     
-	<atom:link href="https://hdyson.dev/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hdyson.github.io/tags/theme/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Theme Setup</title>
-      <link>https://hdyson.dev/posts/theme-setup/</link>
+      <link>https://hdyson.github.io/posts/theme-setup/</link>
       <pubDate>Sun, 13 Oct 2019 20:47:12 +0100</pubDate>
       
-      <guid>https://hdyson.dev/posts/theme-setup/</guid>
+      <guid>https://hdyson.github.io/posts/theme-setup/</guid>
       <description>&lt;p&gt;
 I like the look of the &lt;a href=&#34;https://themes.gohugo.io/beautifulhugo/&#34;&gt;Beautiful Hugo&lt;/a&gt; theme, so let&amp;#39;s see how easy it is to setup.
 &lt;/p&gt;</description>
