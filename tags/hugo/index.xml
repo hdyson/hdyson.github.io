@@ -29,7 +29,7 @@ I like the look of the &lt;a href=&#34;https://themes.gohugo.io/beautifulhugo/&#
       
       <guid>https://hdyson.github.io/posts/hugo-setup/</guid>
       <description>&lt;p&gt;
-Exploring using hugo as a static site generator, partially because it supports
+Exploring using &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; as a static site generator, partially because it supports
 &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt;, and partially because there&amp;#39;s some additional widgets for hugo that
 I&amp;#39;d like to explore.  Below are the steps followed to create this post:
 &lt;/p&gt;</description>

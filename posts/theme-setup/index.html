@@ -256,18 +256,20 @@ Syntax highlighting
 </h2>
 <p>
 Now we want to enable syntax highlighting for code snippets.  The docs don&#39;t
-seem to cover syntax highlighting for org-more files, but let&#39;s see what
+seem to cover syntax highlighting for org-mode files, but let&#39;s see what
 happens if we configure for markdown.  With luck, we&#39;ll get the org-mode
 behaviour too.  So add the following to the <code>config.toml</code> file:
-Hmm, that gives us syntax highlighting, but also removes the distinct layout
-for code blocks.  But removing the <code>pygmentsUseClasses</code> option gives us the
-desired behaviour of syntax highlighting honouring the language specified in
-the org-mode source block header.
 </p>
 <div class="src src-text">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">pygmentsCodeFences = true
 pygmentsUseClasses = true</code></pre></div>
 </div>
+<p>
+Hmm, that gives us syntax highlighting, but also removes the distinct layout
+for code blocks.  But removing the <code>pygmentsUseClasses</code> option gives us the
+desired behaviour of syntax highlighting honouring the language specified in
+the org-mode source block header.
+</p>
 <h2 id="headline-4">
 Configuration template
 </h2>
