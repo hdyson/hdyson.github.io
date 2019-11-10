@@ -7,8 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Overview of all pages with categories, ordered by category - Exploring code</title>
-  <meta name="description" content="A full overview of all pages with categories, ordered by category">
+  <title>Comment Setup - Exploring code</title>
+  <meta name="description" content="
+Now to add some comments to this blog.  Utterances looks promising.  It uses github issue comments to provide the commenting infrastructure, so should be easy to setup.
+">
   <meta name="author" content="hdyson"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -29,13 +31,67 @@
   
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/hdyson.github.io\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/hdyson.github.io\/posts\/comment-setup\/",
+          "name": "Comment setup"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "hdyson"
+  },
+  "headline": "Comment Setup",
+  "description" : " Now to add some comments to this blog. Utterances looks promising. It uses github issue comments to provide the commenting infrastructure, so should be easy to setup. ",
+  "inLanguage" : "en",
+  "wordCount":  103 ,
+  "datePublished" : "2019-11-10T20:02:48",
+  "dateModified" : "2019-11-10T20:02:48",
+  "image" : "https:\/\/hdyson.github.io\/",
+  "keywords" : [ "Blog setup, Comments, Github" ],
+  "mainEntityOfPage" : "https:\/\/hdyson.github.io\/posts\/comment-setup\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/hdyson.github.io\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/hdyson.github.io\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="Categories" />
-<meta property="og:url" content="https://hdyson.github.io/categories/" />
+<meta property="og:title" content="Comment Setup" />
+<meta property="og:description" content="
+Now to add some comments to this blog.  Utterances looks promising.  It uses github issue comments to provide the commenting infrastructure, so should be easy to setup.
+">
+<meta property="og:url" content="https://hdyson.github.io/posts/comment-setup/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Exploring code" />
 
-  <meta name="twitter:title" content="Categories" />
+  <meta name="twitter:title" content="Comment Setup" />
+  <meta name="twitter:description" content="
+Now to add some comments to this blog.  Utterances looks promising.  It uses github issue comments to provide the commenting infrastructure, so should be easy to setup.
+">
   <meta name="twitter:card" content="summary" />
   <meta name="generator" content="Hugo 0.59.0" />
   <link rel="alternate" href="https://hdyson.github.io/index.xml" type="application/rss+xml" title="Exploring code"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -155,9 +211,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="categories-heading">
+            <div class="posts-heading">
               
-                <h1>Categories</h1>
+                <h1>Comment Setup</h1>
               
               
                 <hr class="small">
@@ -173,20 +229,87 @@
 
 
     
-
-
-
 <div class="container" role="main">
-  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"> 
-    <article class="post-preview">
-      <div class="panel-group" id="accordion">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>
+Now to add some comments to this blog.  <a href="https://utteranc.es">Utterances</a> looks promising.  It uses github issue comments to provide the commenting infrastructure, so should be easy to setup.
+</p>
+<p>
+Summarising the steps I went through, we have:
+</p>
+<ol>
+<li>
+<p>
+From the <a href="https://utteranc.es">utterances</a> webpage, install utterances to the deployed repository (i.e. <code>&lt;username&gt;.github.io</code>).
+</p>
+</li>
+<li>
+<p>
+Still on the utterances webpage, set up the repo, blog post to issue mapping, theme, etc.  As these are changed, the script at the bottom of the page to copy and paste will update automatically.
+</p>
+</li>
+<li>
+<p>
+Copy the &#34;enable uttterances&#34; script to <code>./layouts/partials/footer_custom.html</code> (this path may be different for a different theme - check the theme docs).
+</p>
+</li>
+</ol>
+
         
-      </div>
-    </article>
+          <div class="blog-tags">
+            
+              <a href="https://hdyson.github.io//tags/blog-setup/">Blog setup</a>&nbsp;
+            
+              <a href="https://hdyson.github.io//tags/comments/">Comments</a>&nbsp;
+            
+              <a href="https://hdyson.github.io//tags/github/">Github</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+          
+            
+          
+
+          
+                  <h4 class="see-also">See also</h4>
+                  <ul>
+                
+                
+                    <li><a href="/posts/deploying-to-github-pages/">Deploying to Github Pages</a></li>
+                
+                    <li><a href="/posts/theme-setup/">Theme setup</a></li>
+                
+                    <li><a href="/posts/hugo-setup/">Hugo setup in org format</a></li>
+                
+              </ul>
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://hdyson.github.io/posts/deploying-to-github-pages/" data-toggle="tooltip" data-placement="top" title="Deploying to Github Pages">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+
+    </div>
   </div>
 </div>
-
-
 
       
 <footer>
@@ -205,7 +328,7 @@
               </li>
           
           <li>
-            <a href="/categories/index.xml" title="RSS">
+            <a href="" title="RSS">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
