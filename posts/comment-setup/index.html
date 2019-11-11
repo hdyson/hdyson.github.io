@@ -61,7 +61,7 @@ Now to add some comments to this blog.  Utterances looks promising.  It uses git
   "headline": "Comment Setup",
   "description" : " Now to add some comments to this blog. Utterances looks promising. It uses github issue comments to provide the commenting infrastructure, so should be easy to setup. ",
   "inLanguage" : "en",
-  "wordCount":  103 ,
+  "wordCount":  147 ,
   "datePublished" : "2019-11-10T20:02:48",
   "dateModified" : "2019-11-10T20:02:48",
   "image" : "https:\/\/hdyson.github.io\/",
@@ -252,7 +252,7 @@ Still on the utterances webpage, set up the repo, blog post to issue mapping, th
 </li>
 <li>
 <p>
-Copy the &#34;enable uttterances&#34; script to <code>./layouts/partials/footer_custom.html</code> (this path may be different for a different theme - check the theme docs).
+<del>Copy the &#34;enable uttterances&#34; script to <code>./layouts/partials/footer_custom.html</code> (this path may be different for a different theme - check the theme docs).</del>  Okay, this didn&#39;t work for me (the comment box was below the footer and too small to be useful).  Instead, I found that adding the utterances script to <code>./themes/beautifulhugo/layouts/_default/single.html</code> in the right location (immediately before the section for disqus or staticman comments) was sufficient.
 </p>
 </li>
 </ol>
