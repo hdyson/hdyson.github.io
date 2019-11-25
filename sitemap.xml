@@ -48,12 +48,22 @@
   </url>
   
   <url>
-    <loc>https://hdyson.github.io/posts/complete-emacs-setup/</loc>
-    <lastmod>2019-10-15T20:34:49+01:00</lastmod>
+    <loc>https://hdyson.github.io/tags/emacs/</loc>
+    <lastmod>2019-10-15T20:53:56+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hdyson.github.io/tags/emacs/</loc>
+    <loc>https://hdyson.github.io/posts/making-init-files-intelligible/</loc>
+    <lastmod>2019-10-15T20:53:56+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.github.io/tags/org-mode/</loc>
+    <lastmod>2019-10-15T20:53:56+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.github.io/posts/complete-emacs-setup/</loc>
     <lastmod>2019-10-15T20:34:49+01:00</lastmod>
   </url>
   

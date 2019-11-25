@@ -34,6 +34,27 @@ A quick summary of deploying Hugo this generated site to &lt;a href=&#34;https:/
     </item>
     
     <item>
+      <title>Making Init Files Intelligible</title>
+      <link>https://hdyson.github.io/posts/making-init-files-intelligible/</link>
+      <pubDate>Tue, 15 Oct 2019 20:53:56 +0100</pubDate>
+      
+      <guid>https://hdyson.github.io/posts/making-init-files-intelligible/</guid>
+      <description>&lt;p&gt;
+One of the issues with an editor as configurable as emacs is that an emacs
+.init.el file ends up an unmaintanable mess of barely understood code
+snippets, duplicate and contradictory settings, and a treasure trove of
+forgotten knowledge.
+&lt;/p&gt;
+&lt;p&gt;
+We can do better.
+&lt;/p&gt;
+&lt;p&gt;
+So in this post I&amp;#39;ll show you how to have a documented, human-readable emacs
+configuration file.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Complete emacs setup</title>
       <link>https://hdyson.github.io/posts/complete-emacs-setup/</link>
       <pubDate>Tue, 15 Oct 2019 20:34:49 +0100</pubDate>

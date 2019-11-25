@@ -7,7 +7,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Posts - Exploring code</title>
+  <title>Making Init Files Intelligible - Exploring code</title>
+  <meta name="description" content="
+One of the issues with an editor as configurable as emacs is that an emacs
+.init.el file ends up an unmaintanable mess of barely understood code
+snippets, duplicate and contradictory settings, and a treasure trove of
+forgotten knowledge.
+
+
+We can do better.
+
+
+So in this post I&#39;ll show you how to have a documented, human-readable emacs
+configuration file.
+">
   <meta name="author" content="hdyson"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -28,13 +41,78 @@
   
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/hdyson.github.io\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/hdyson.github.io\/posts\/making-init-files-intelligible\/",
+          "name": "Making init files intelligible"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "hdyson"
+  },
+  "headline": "Making Init Files Intelligible",
+  "description" : " One of the issues with an editor as configurable as emacs is that an emacs .init.el file ends up an unmaintanable mess of barely understood code snippets, duplicate and contradictory settings, and a treasure trove of forgotten knowledge.  We can do better.  So in this post I\x26#39;ll show you how to have a documented, human-readable emacs configuration file. ",
+  "inLanguage" : "en",
+  "wordCount":  460 ,
+  "datePublished" : "2019-10-15T20:53:56",
+  "dateModified" : "2019-10-15T20:53:56",
+  "image" : "https:\/\/hdyson.github.io\/",
+  "keywords" : [ "emacs, org-mode" ],
+  "mainEntityOfPage" : "https:\/\/hdyson.github.io\/posts\/making-init-files-intelligible\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/hdyson.github.io\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/hdyson.github.io\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="Posts" />
-<meta property="og:url" content="https://hdyson.github.io/posts/" />
+<meta property="og:title" content="Making Init Files Intelligible" />
+<meta property="og:description" content="
+One of the issues with an editor as configurable as emacs is that an emacs
+.init.el file ends up an unmaintanable mess of barely understood code
+snippets, duplicate and contradictory settings, and a treasure trove of
+forgotten knowledge.
+
+
+We can do better.
+
+
+So in this post I&#39;ll show you how to have a documented, human-readable emacs
+configuration file.
+">
+<meta property="og:url" content="https://hdyson.github.io/posts/making-init-files-intelligible/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Exploring code" />
 
-  <meta name="twitter:title" content="Posts" />
+  <meta name="twitter:title" content="Making Init Files Intelligible" />
+  <meta name="twitter:description" content="
+One of the issues with an editor as configurable as emacs is that an emacs
+.init.el file ends up an unmaintanable mess of barely understood code
+snippets, duplicate and contradictory settings, and a …">
   <meta name="twitter:card" content="summary" />
   <meta name="generator" content="Hugo 0.59.0" />
   <link rel="alternate" href="https://hdyson.github.io/index.xml" type="application/rss+xml" title="Exploring code"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -156,7 +234,7 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="posts-heading">
               
-                <h1>Posts</h1>
+                <h1>Making Init Files Intelligible</h1>
               
               
                 <hr class="small">
@@ -172,138 +250,10 @@
 
 
     
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        <div class="posts-list">
-          
-            <article class="post-preview">
-    <a href="https://hdyson.github.io/posts/comment-setup/">
-        <h2 class="post-title">Comment Setup</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on November 10, 2019
-  
-  
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;hdyson
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>
-Now to add some comments to this blog.  <a href="https://utteranc.es">Utterances</a> looks promising.  It uses github issue comments to provide the commenting infrastructure, so should be easy to setup.
-</p>
-        <a href="https://hdyson.github.io/posts/comment-setup/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://hdyson.github.io//tags/blog-setup/">Blog setup</a>&nbsp;
-        
-        <a href="https://hdyson.github.io//tags/comments/">Comments</a>&nbsp;
-        
-        <a href="https://hdyson.github.io//tags/github/">Github</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://hdyson.github.io/posts/deploying-to-github-pages/">
-        <h2 class="post-title">Deploying to Github Pages</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on October 27, 2019
-  
-  
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;hdyson
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>
-A quick summary of deploying Hugo this generated site to <a href="https://pages.github.com/">Github pages</a> (and hence <a href="https://hdyson.dev">hdyson.dev</a>) via the instructions from the <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Hugo docs</a>.
-</p>
-        <a href="https://hdyson.github.io/posts/deploying-to-github-pages/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://hdyson.github.io//tags/blog-setup/">Blog setup</a>&nbsp;
-        
-        <a href="https://hdyson.github.io//tags/github/">Github</a>&nbsp;
-        
-        <a href="https://hdyson.github.io//tags/deployment/">Deployment</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://hdyson.github.io/posts/making-init-files-intelligible/">
-        <h2 class="post-title">Making Init Files Intelligible</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on October 15, 2019
-  
-  
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;hdyson
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
         <p>
 One of the issues with an editor as configurable as emacs is that an emacs
 .init.el file ends up an unmaintanable mess of barely understood code
@@ -317,171 +267,136 @@ We can do better.
 So in this post I&#39;ll show you how to have a documented, human-readable emacs
 configuration file.
 </p>
-        <a href="https://hdyson.github.io/posts/making-init-files-intelligible/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://hdyson.github.io//tags/emacs/">emacs</a>&nbsp;
-        
-        <a href="https://hdyson.github.io//tags/org-mode/">org-mode</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://hdyson.github.io/posts/complete-emacs-setup/">
-        <h2 class="post-title">Complete emacs setup</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on October 15, 2019
-  
-  
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;hdyson
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>
-Following on from <a href="https://boingboing.net/2016/09/30/finally-got-my-emacs-setup-jus.html">Boing Boing</a>, I finally got my emacs setup just how I like
-it:
+<h2 id="headline-1">
+The problem
+</h2>
+<p>
+Emacs is massively customisable.  These customisations are stored in elisp
+source files (e.g. <code>~/.emacs.d/init.el</code>), which are interpreted by emacs on
+startup.  The difficulty is that these files are usually composed of various
+snippets from a variety of sources, which results in a
+configuration that can be hard to read and maintain.
 </p>
-        <a href="https://hdyson.github.io/posts/complete-emacs-setup/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://hdyson.github.io//tags/emacs/">emacs</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://hdyson.github.io/posts/theme-setup/">
-        <h2 class="post-title">Theme setup</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on October 13, 2019
-  
-  
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;hdyson
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>
-I like the look of the <a href="https://themes.gohugo.io/beautifulhugo/">Beautiful Hugo</a> theme, so let&#39;s see how easy it is to setup.
+<h2 id="headline-2">
+The solution
+</h2>
+<p>
+So how do we avoid this?  You can simply comment the elisp code, but in
+reality this doesn&#39;t scale very well.  The same setting gets duplicated in
+multiple locations, and worse.  So instead, we want a hierarchical structure,
+where there&#39;s a correct place for each setting.  This means that when you
+decide to fine tune the behaviour of a particular setting, you know where to
+look for the current setting.
 </p>
-        <a href="https://hdyson.github.io/posts/theme-setup/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://hdyson.github.io//tags/hugo/">Hugo</a>&nbsp;
-        
-        <a href="https://hdyson.github.io//tags/blog-setup/">Blog setup</a>&nbsp;
-        
-        <a href="https://hdyson.github.io//tags/theme/">Theme</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://hdyson.github.io/posts/hugo-setup/">
-        <h2 class="post-title">Hugo setup in org format</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on October 12, 2019
-  
-  
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;hdyson
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>
-Exploring using <a href="https://gohugo.io">Hugo</a> as a static site generator, partially because it supports
-<a href="https://orgmode.org">org-mode</a>, and partially because there&#39;s some additional widgets for hugo that
-I&#39;d like to explore.  Below are the steps followed to create this post:
+<p>
+The magic bullet to make this work is <a href="https://orgmode.org">org-mode</a>.  This allows creating a
+structured document, which has code snippets in it.  Note that we&#39;ve reversed
+the sense of the configuration file here: rather than code with a smattering
+of comments, we&#39;re now talking about a document with a smattering of code.
+But a document for configuration is only useful if it can be interpreted by
+emacs.  This is where <code>org-babel</code> comes in.  This translates the <code>org-mode</code>
+file and extracts all the code blocks.  The documentation includes an example
+that does exactly <a href="https://orgmode.org/worg/org-contrib/babel/intro.html#literate-emacs-init">what we need</a>.  This example <code>init.el</code> translates the
+document into code on starting up emacs, which is then interpreted by emacs.
+So the init file is always up to date whenever you restart emacs.
 </p>
-        <a href="https://hdyson.github.io/posts/hugo-setup/" class="post-read-more">[Read More]</a>
-        
-    </div>
+<p>
+I recommend keeping your <code>~/.emacs.d/</code> directory as a git repository, synced
+to <a href="https://github.com">Github</a>.  As a bonus, github renders the <code>org-mode</code> file in the same fashion
+that it renders markdown or jupyter notebooks.  If you choose to name the main
+configuration file <code>README.org</code>, then this is the page that renders as the
+front page of the repository.
+</p>
+<p>
+Here&#39;s some examples:
+</p>
+<ul>
+<li>
+<p>
+Raw (i.e. unrendered) <a href="https://raw.githubusercontent.com/hdyson/Emacs-configuration/62013322cadde299168cb5e530377051ec05e265/readme.org">readme.org</a> - this is the form in which the
+configuration file is written.  Note that <code>org-mode</code> makes this easier to
+use when opened in emacs rather than a web browser.
+</p>
+</li>
+<li>
+<p>
+How Github <a href="https://github.com/hdyson/Emacs-configuration/blob/62013322cadde299168cb5e530377051ec05e265/readme.org">renders the file</a>.  Much more readable.  Note that this link and
+the previous link are to a snapshot in time; the current <code>readme.org</code> may
+have diverged from this.
+</p>
+</li>
+<li>
+<p>
+An example of <a href="https://pages.sachachua.com/.emacs.d/Sacha.html">how well this scales</a>.  This is a link to Sacha Chua&#39;s config
+(of <a href="https://sachachua.com/blog/category/geek/emacs/emacs-news">emacs news fame</a>).
+</p>
+</li>
+<li>
+<p>
+A reminder that you&#39;ll need some <a href="https://orgmode.org/worg/org-contrib/babel/intro.html#literate-emacs-init">boilerplate</a> in your <code>~/.emacs.d/init.el</code>
+file.
+</p>
+</li>
+</ul>
 
-    
-    <div class="blog-tags">
         
-        <a href="https://hdyson.github.io//tags/hugo/">Hugo</a>&nbsp;
+          <div class="blog-tags">
+            
+              <a href="https://hdyson.github.io//tags/emacs/">emacs</a>&nbsp;
+            
+              <a href="https://hdyson.github.io//tags/org-mode/">org-mode</a>&nbsp;
+            
+          </div>
         
-        <a href="https://hdyson.github.io//tags/blog-setup/">Blog setup</a>&nbsp;
-        
-    </div>
-    
 
-</article>
+        
+
+        
           
-        </div>
+            
+          
+          
+                  <h4 class="see-also">See also</h4>
+                  <ul>
+                
+                
+                    <li><a href="/posts/complete-emacs-setup/">Complete emacs setup</a></li>
+                
+              </ul>
+
+          
         
-      </div>
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://hdyson.github.io/posts/complete-emacs-setup/" data-toggle="tooltip" data-placement="top" title="Complete emacs setup">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://hdyson.github.io/posts/deploying-to-github-pages/" data-toggle="tooltip" data-placement="top" title="Deploying to Github Pages">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+	<script src="https://utteranc.es/client.js"
+		repo="hdyson/hdyson.github.io"
+		issue-term="title"
+		theme="github-light"
+		crossorigin="anonymous"
+		async>
+	</script>
+
+
+
+      
+
     </div>
   </div>
+</div>
 
       
 <footer>
@@ -500,7 +415,7 @@ I&#39;d like to explore.  Below are the steps followed to create this post:
               </li>
           
           <li>
-            <a href="/posts/index.xml" title="RSS">
+            <a href="" title="RSS">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
