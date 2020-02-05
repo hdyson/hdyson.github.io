@@ -7,9 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Deploying to Github Pages - Exploring code</title>
+  <title>Post links - Exploring code</title>
   <meta name="description" content="
-A quick summary of deploying Hugo this generated site to Github pages (and hence hdyson.dev) via the instructions from the Hugo docs.
+It&#39;s not obvious (to me, anyway) how to use hugo cross-reference links with
+org-mode format posts.  This very short post gives an example of how to do so.
 ">
   <meta name="author" content="hdyson"/><script type="application/ld+json">
 {
@@ -46,8 +47,8 @@ A quick summary of deploying Hugo this generated site to Github pages (and hence
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/hdyson.github.io\/posts\/deploying-to-github-pages\/",
-          "name": "Deploying to github pages"
+          "@id": "https:\/\/hdyson.github.io\/posts\/post-links\/",
+          "name": "Post links"
         }
     }]
 }
@@ -58,15 +59,15 @@ A quick summary of deploying Hugo this generated site to Github pages (and hence
   "author": {
     "name" : "hdyson"
   },
-  "headline": "Deploying to Github Pages",
-  "description" : " A quick summary of deploying Hugo this generated site to Github pages (and hence hdyson.dev) via the instructions from the Hugo docs. ",
+  "headline": "Post links",
+  "description" : " It\x26#39;s not obvious (to me, anyway) how to use hugo cross-reference links with org-mode format posts. This very short post gives an example of how to do so. ",
   "inLanguage" : "en",
-  "wordCount":  105 ,
-  "datePublished" : "2019-10-27T19:52:03",
-  "dateModified" : "2019-10-27T19:52:03",
+  "wordCount":  87 ,
+  "datePublished" : "2020-01-30T22:09:50",
+  "dateModified" : "2020-01-30T22:09:50",
   "image" : "https:\/\/hdyson.github.io\/",
-  "keywords" : [ "Blog setup, Github, Deployment" ],
-  "mainEntityOfPage" : "https:\/\/hdyson.github.io\/posts\/deploying-to-github-pages\/",
+  "keywords" : [ "Hugo, Blog setup" ],
+  "mainEntityOfPage" : "https:\/\/hdyson.github.io\/posts\/post-links\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/hdyson.github.io\/",
@@ -80,17 +81,19 @@ A quick summary of deploying Hugo this generated site to Github pages (and hence
 }
 </script>
 
-<meta property="og:title" content="Deploying to Github Pages" />
+<meta property="og:title" content="Post links" />
 <meta property="og:description" content="
-A quick summary of deploying Hugo this generated site to Github pages (and hence hdyson.dev) via the instructions from the Hugo docs.
+It&#39;s not obvious (to me, anyway) how to use hugo cross-reference links with
+org-mode format posts.  This very short post gives an example of how to do so.
 ">
-<meta property="og:url" content="https://hdyson.github.io/posts/deploying-to-github-pages/" />
+<meta property="og:url" content="https://hdyson.github.io/posts/post-links/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Exploring code" />
 
-  <meta name="twitter:title" content="Deploying to Github Pages" />
+  <meta name="twitter:title" content="Post links" />
   <meta name="twitter:description" content="
-A quick summary of deploying Hugo this generated site to Github pages (and hence hdyson.dev) via the instructions from the Hugo docs.
+It&#39;s not obvious (to me, anyway) how to use hugo cross-reference links with
+org-mode format posts.  This very short post gives an example of how to do so.
 ">
   <meta name="twitter:card" content="summary" />
   <meta name="generator" content="Hugo 0.63.2" />
@@ -213,7 +216,7 @@ A quick summary of deploying Hugo this generated site to Github pages (and hence
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="posts-heading">
               
-                <h1>Deploying to Github Pages</h1>
+                <h1>Post links</h1>
               
               
                 <hr class="small">
@@ -234,55 +237,31 @@ A quick summary of deploying Hugo this generated site to Github pages (and hence
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p>
-A quick summary of deploying Hugo this generated site to <a href="https://pages.github.com/">Github pages</a> (and hence <a href="https://hdyson.dev">hdyson.dev</a>) via the instructions from the <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Hugo docs</a>.
+It&#39;s not obvious (to me, anyway) how to use <a href="https://gohugo.io/content-management/cross-references/">hugo cross-reference links</a> with
+org-mode format posts.  This very short post gives an example of how to do so.
 </p>
 <p>
-To summarise:
+Here&#39;s an example for linking to this post:
 </p>
-<ol>
-<li>
 <p>
-<a href="https://github.com/new">Create</a> source (arbitrary name) and deployed (name must be <code>&lt;username&gt;.github.io</code> for Github pages) repos on Github.
+<a href="https://hdyson.github.io/posts/post-links/">https://hdyson.github.io/posts/post-links/</a>
 </p>
-</li>
-<li>
-<p>
-Clone the source project.  Note the <code>baseURL</code> in the config should point to the Github URL even when making the site available via a different URL.
-</p>
-</li>
-<li>
-<p>
-Add content.
-</p>
-</li>
-<li>
-<p>
-Add the built (by default, <code>./public</code>) folder as a submodule, pointing to <code>&lt;username&gt;.github.io</code>:
-</p>
-<div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public</code></pre></div>
+<div class="src src-text">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[[{{&lt; ref &#34;/posts/post-links.org&#34; &gt;}}]]</code></pre></div>
 </div>
-</li>
-<li>
 <p>
-Add and run the <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script">deploy.sh</a> script.
+The org-mode link syntax needs to be used in addition to the curly braces.
+The use of <code>/* ... */</code> (which you&#39;ll only see if you&#39;re looking at the source
+of this repo on github) to escape Hugo rendering the literal example is from
+<a href="https://liatas.com/posts/escaping-hugo-shortcodes/">this post</a>.
 </p>
-</li>
-<li>
-<p>
-Finally, tweak the deployed repository settings as per the Github <a href="https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site#creating-your-site">instructions</a>.
-</p>
-</li>
-</ol>
 
         
           <div class="blog-tags">
             
+              <a href="https://hdyson.github.io//tags/hugo/">Hugo</a>&nbsp;
+            
               <a href="https://hdyson.github.io//tags/blog-setup/">Blog setup</a>&nbsp;
-            
-              <a href="https://hdyson.github.io//tags/github/">Github</a>&nbsp;
-            
-              <a href="https://hdyson.github.io//tags/deployment/">Deployment</a>&nbsp;
             
           </div>
         
@@ -298,9 +277,9 @@ Finally, tweak the deployed repository settings as per the Github <a href="https
                   <ul>
                 
                 
-                    <li><a href="/posts/post-links/">Post links</a></li>
-                
                     <li><a href="/posts/comment-setup/">Comment setup</a></li>
+                
+                    <li><a href="/posts/deploying-to-github-pages/">Deploying to Github Pages</a></li>
                 
                     <li><a href="/posts/theme-setup/">Theme setup</a></li>
                 
@@ -316,13 +295,9 @@ Finally, tweak the deployed repository settings as per the Github <a href="https
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://hdyson.github.io/posts/making-init-files-intelligible/" data-toggle="tooltip" data-placement="top" title="Making init files intelligible">&larr; Previous Post</a>
+              <a href="https://hdyson.github.io/posts/comment-setup/" data-toggle="tooltip" data-placement="top" title="Comment setup">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://hdyson.github.io/posts/comment-setup/" data-toggle="tooltip" data-placement="top" title="Comment setup">Next Post &rarr;</a>
-            </li>
           
         </ul>
       

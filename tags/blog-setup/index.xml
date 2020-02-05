@@ -6,13 +6,25 @@
     <description>Recent content in Blog setup on Exploring code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Nov 2019 20:02:48 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jan 2020 22:09:50 +0000</lastBuildDate>
     
 	<atom:link href="https://hdyson.github.io/tags/blog-setup/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Comment Setup</title>
+      <title>Post links</title>
+      <link>https://hdyson.github.io/posts/post-links/</link>
+      <pubDate>Thu, 30 Jan 2020 22:09:50 +0000</pubDate>
+      
+      <guid>https://hdyson.github.io/posts/post-links/</guid>
+      <description>&lt;p&gt;
+It&amp;#39;s not obvious (to me, anyway) how to use &lt;a href=&#34;https://gohugo.io/content-management/cross-references/&#34;&gt;hugo cross-reference links&lt;/a&gt; with
+org-mode format posts.  This very short post gives an example of how to do so.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Comment setup</title>
       <link>https://hdyson.github.io/posts/comment-setup/</link>
       <pubDate>Sun, 10 Nov 2019 20:02:48 +0000</pubDate>
       
