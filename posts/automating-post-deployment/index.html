@@ -7,9 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Deploying to Github Pages - Exploring code</title>
+  <title>Automating post deployment - Exploring code</title>
   <meta name="description" content="
-A quick summary of deploying Hugo this generated site to Github pages (and hence hdyson.dev) via the instructions from the Hugo docs.
+The problem
+
+
+Publishing posts via hugo is slightly more manual than I&#39;d like.  The trigger
+for this post was &#34;Can we automate this with Github actions?&#34;, but it turns
+out the solution was much simpler.
 ">
   <meta name="author" content="hdyson"/><script type="application/ld+json">
 {
@@ -46,8 +51,8 @@ A quick summary of deploying Hugo this generated site to Github pages (and hence
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/hdyson.github.io\/posts\/deploying-to-github-pages\/",
-          "name": "Deploying to github pages"
+          "@id": "https:\/\/hdyson.github.io\/posts\/automating-post-deployment\/",
+          "name": "Automating post deployment"
         }
     }]
 }
@@ -58,15 +63,15 @@ A quick summary of deploying Hugo this generated site to Github pages (and hence
   "author": {
     "name" : "hdyson"
   },
-  "headline": "Deploying to Github Pages",
-  "description" : " A quick summary of deploying Hugo this generated site to Github pages (and hence hdyson.dev) via the instructions from the Hugo docs. ",
+  "headline": "Automating post deployment",
+  "description" : "The problem   Publishing posts via hugo is slightly more manual than I\x26#39;d like. The trigger for this post was \x26#34;Can we automate this with Github actions?\x26#34;, but it turns out the solution was much simpler. ",
   "inLanguage" : "en",
-  "wordCount":  105 ,
-  "datePublished" : "2019-10-27T19:52:03",
-  "dateModified" : "2019-10-27T19:52:03",
+  "wordCount":  233 ,
+  "datePublished" : "2020-02-09T14:33:05",
+  "dateModified" : "2020-02-09T14:33:05",
   "image" : "https:\/\/hdyson.github.io\/",
-  "keywords" : [ "Blog setup, Github, Deployment" ],
-  "mainEntityOfPage" : "https:\/\/hdyson.github.io\/posts\/deploying-to-github-pages\/",
+  "keywords" : [ "Hugo, Blog setup, Github, Github actions" ],
+  "mainEntityOfPage" : "https:\/\/hdyson.github.io\/posts\/automating-post-deployment\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/hdyson.github.io\/",
@@ -80,18 +85,27 @@ A quick summary of deploying Hugo this generated site to Github pages (and hence
 }
 </script>
 
-<meta property="og:title" content="Deploying to Github Pages" />
+<meta property="og:title" content="Automating post deployment" />
 <meta property="og:description" content="
-A quick summary of deploying Hugo this generated site to Github pages (and hence hdyson.dev) via the instructions from the Hugo docs.
+The problem
+
+
+Publishing posts via hugo is slightly more manual than I&#39;d like.  The trigger
+for this post was &#34;Can we automate this with Github actions?&#34;, but it turns
+out the solution was much simpler.
 ">
-<meta property="og:url" content="https://hdyson.github.io/posts/deploying-to-github-pages/" />
+<meta property="og:url" content="https://hdyson.github.io/posts/automating-post-deployment/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Exploring code" />
 
-  <meta name="twitter:title" content="Deploying to Github Pages" />
+  <meta name="twitter:title" content="Automating post deployment" />
   <meta name="twitter:description" content="
-A quick summary of deploying Hugo this generated site to Github pages (and hence hdyson.dev) via the instructions from the Hugo docs.
-">
+The problem
+
+
+Publishing posts via hugo is slightly more manual than I&#39;d like.  The trigger
+for this post was &#34;Can we automate this with Github actions?&#34;, but it turns
+out the solution …">
   <meta name="twitter:card" content="summary" />
   <meta name="generator" content="Hugo 0.63.2" />
   <link rel="alternate" href="https://hdyson.github.io/index.xml" type="application/rss+xml" title="Exploring code"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -213,7 +227,7 @@ A quick summary of deploying Hugo this generated site to Github pages (and hence
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="posts-heading">
               
-                <h1>Deploying to Github Pages</h1>
+                <h1>Automating post deployment</h1>
               
               
                 <hr class="small">
@@ -233,56 +247,81 @@ A quick summary of deploying Hugo this generated site to Github pages (and hence
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>
-A quick summary of deploying Hugo this generated site to <a href="https://pages.github.com/">Github pages</a> (and hence <a href="https://hdyson.dev">hdyson.dev</a>) via the instructions from the <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Hugo docs</a>.
+        <h2 id="headline-1">
+The problem
+</h2>
+<p>
+Publishing posts via hugo is slightly more manual than I&#39;d like.  The trigger
+for this post was &#34;Can we automate this with <a href="https://github.com/features/actions">Github actions</a>?&#34;, but it turns
+out the solution was much simpler.
+</p>
+<h2 id="headline-2">
+Background
+</h2>
+<p>
+The setup for the initial deployment was described in
+<a href="https://hdyson.github.io/posts/deploying-to-github-pages/">this post</a>.
 </p>
 <p>
-To summarise:
+For adding a new post or amendments to a post, the procedure is:
 </p>
 <ol>
 <li>
 <p>
-<a href="https://github.com/new">Create</a> source (arbitrary name) and deployed (name must be <code>&lt;username&gt;.github.io</code> for Github pages) repos on Github.
+Run the <code>deploy.sh</code> script.
 </p>
 </li>
 <li>
 <p>
-Clone the source project.  Note the <code>baseURL</code> in the config should point to the Github URL even when making the site available via a different URL.
+Commit and push the changes to the source repo.
 </p>
 </li>
 <li>
 <p>
-Add content.
+<code>cd</code> to <code>public</code> directory in source repo.
 </p>
 </li>
 <li>
 <p>
-Add the built (by default, <code>./public</code>) folder as a submodule, pointing to <code>&lt;username&gt;.github.io</code>:
-</p>
-<div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public</code></pre></div>
-</div>
-</li>
-<li>
-<p>
-Add and run the <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script">deploy.sh</a> script.
-</p>
-</li>
-<li>
-<p>
-Finally, tweak the deployed repository settings as per the Github <a href="https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site#creating-your-site">instructions</a>.
+<code>git push</code> to push to the built site repo.
 </p>
 </li>
 </ol>
+<p>
+My first throughs where whether we could automate steps 3 and 4 with <a href="https://github.com/features/actions">Github
+actions</a>?  But I think a better approach is to modify the <code>deploy.sh</code> script -
+there&#39;s no need for anything after step 1 to be manual.
+</p>
+<h2 id="headline-3">
+Solution
+</h2>
+<p>
+After writing or amending a post, commit the changes locally and then run the
+modified <a href="https://github.com/hdyson/blog-source/blob/master/deploy.sh">deploy.sh</a>.  The original version of the script came from the <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script">hugo
+docs</a>; the description and comments implies that the new behaviour is what was
+intended for the script?  Either way, this version works for me now, while
+previously I had to perform the extra steps.
+</p>
+<h2 id="headline-4">
+Update
+</h2>
+<p>
+It looks like the original script doesn&#39;t perform the git push stage if
+there&#39;s nothing to commit - e.g. if the commit was done manually.  So it may
+be that separating the push into two steps isn&#39;t necessary, but if it ain&#39;t
+broke…
+</p>
 
         
           <div class="blog-tags">
+            
+              <a href="https://hdyson.github.io//tags/hugo/">Hugo</a>&nbsp;
             
               <a href="https://hdyson.github.io//tags/blog-setup/">Blog setup</a>&nbsp;
             
               <a href="https://hdyson.github.io//tags/github/">Github</a>&nbsp;
             
-              <a href="https://hdyson.github.io//tags/deployment/">Deployment</a>&nbsp;
+              <a href="https://hdyson.github.io//tags/github-actions/">Github actions</a>&nbsp;
             
           </div>
         
@@ -298,11 +337,11 @@ Finally, tweak the deployed repository settings as per the Github <a href="https
                   <ul>
                 
                 
-                    <li><a href="/posts/automating-post-deployment/">Automating post deployment</a></li>
-                
                     <li><a href="/posts/post-links/">Post links</a></li>
                 
                     <li><a href="/posts/comment-setup/">Comment setup</a></li>
+                
+                    <li><a href="/posts/deploying-to-github-pages/">Deploying to Github Pages</a></li>
                 
                     <li><a href="/posts/theme-setup/">Theme setup</a></li>
                 
@@ -318,13 +357,9 @@ Finally, tweak the deployed repository settings as per the Github <a href="https
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://hdyson.github.io/posts/making-init-files-intelligible/" data-toggle="tooltip" data-placement="top" title="Making init files intelligible">&larr; Previous Post</a>
+              <a href="https://hdyson.github.io/posts/post-links/" data-toggle="tooltip" data-placement="top" title="Post links">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://hdyson.github.io/posts/comment-setup/" data-toggle="tooltip" data-placement="top" title="Comment setup">Next Post &rarr;</a>
-            </li>
           
         </ul>
       

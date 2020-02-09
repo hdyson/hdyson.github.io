@@ -3,32 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hdyson.github.io/posts/automating-post-deployment/</loc>
+    <lastmod>2020-02-09T14:33:05+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hdyson.github.io/tags/blog-setup/</loc>
-    <lastmod>2020-01-30T22:09:50+00:00</lastmod>
+    <lastmod>2020-02-09T14:33:05+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://hdyson.github.io/</loc>
-    <lastmod>2020-01-30T22:09:50+00:00</lastmod>
+    <lastmod>2020-02-09T14:33:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.github.io/tags/github/</loc>
+    <lastmod>2020-02-09T14:33:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.github.io/tags/github-actions/</loc>
+    <lastmod>2020-02-09T14:33:05+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://hdyson.github.io/tags/hugo/</loc>
-    <lastmod>2020-01-30T22:09:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hdyson.github.io/posts/post-links/</loc>
-    <lastmod>2020-01-30T22:09:50+00:00</lastmod>
+    <lastmod>2020-02-09T14:33:05+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://hdyson.github.io/posts/</loc>
-    <lastmod>2020-01-30T22:09:50+00:00</lastmod>
+    <lastmod>2020-02-09T14:33:05+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://hdyson.github.io/tags/</loc>
+    <lastmod>2020-02-09T14:33:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdyson.github.io/posts/post-links/</loc>
     <lastmod>2020-01-30T22:09:50+00:00</lastmod>
   </url>
   
@@ -39,11 +54,6 @@
   
   <url>
     <loc>https://hdyson.github.io/tags/comments/</loc>
-    <lastmod>2019-11-10T20:02:48+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hdyson.github.io/tags/github/</loc>
     <lastmod>2019-11-10T20:02:48+00:00</lastmod>
   </url>
   
