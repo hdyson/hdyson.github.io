@@ -7,8 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Overview of all pages with the tag #emacs - Exploring code</title>
-  <meta name="description" content="Overview of all pages with the tag #emacs, such as: Selecting which python to use with org-babel">
+  <title>Selecting which python to use with org-babel - Exploring code</title>
+  <meta name="description" content="
+When working with org-babel, it&#39;s useful to be able to select from which
+environment python is run.  There&#39;s the obvious brute-force approach -
+activating the appropriate environment before launching emacs - but quitting
+and restarting emacs is a lot of hassle if you need to change the environment
+in a running emacs.  Besides, I&#39;m a big advocate of launching emacs on
+startup, and only exiting it when you shutdown your computer.  So here, I&#39;ll
+show how to choose the python being run within org-babel.
+">
   <meta name="author" content="hdyson"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -29,13 +37,74 @@
   
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/hdyson.github.io\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/hdyson.github.io\/posts\/org-babel-conda\/",
+          "name": "Selecting which python to use with org babel"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "hdyson"
+  },
+  "headline": "Selecting which python to use with org-babel",
+  "description" : " When working with org-babel, it\u0026#39;s useful to be able to select from which environment python is run. There\u0026#39;s the obvious brute-force approach - activating the appropriate environment before launching emacs - but quitting and restarting emacs is a lot of hassle if you need to change the environment in a running emacs. Besides, I\u0026#39;m a big advocate of launching emacs on startup, and only exiting it when you shutdown your computer. So here, I\u0026#39;ll show how to choose the python being run within org-babel. ",
+  "inLanguage" : "en",
+  "wordCount":  341 ,
+  "datePublished" : "2020-06-07T20:56:00",
+  "dateModified" : "2020-06-07T20:56:00",
+  "image" : "https:\/\/hdyson.github.io\/",
+  "keywords" : [ "emacs, org-mode, conda, virtual environment" ],
+  "mainEntityOfPage" : "https:\/\/hdyson.github.io\/posts\/org-babel-conda\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/hdyson.github.io\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/hdyson.github.io\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="emacs" />
-<meta property="og:url" content="https://hdyson.github.io/tags/emacs/" />
+<meta property="og:title" content="Selecting which python to use with org-babel" />
+<meta property="og:description" content="
+When working with org-babel, it&#39;s useful to be able to select from which
+environment python is run.  There&#39;s the obvious brute-force approach -
+activating the appropriate environment before launching emacs - but quitting
+and restarting emacs is a lot of hassle if you need to change the environment
+in a running emacs.  Besides, I&#39;m a big advocate of launching emacs on
+startup, and only exiting it when you shutdown your computer.  So here, I&#39;ll
+show how to choose the python being run within org-babel.
+">
+<meta property="og:url" content="https://hdyson.github.io/posts/org-babel-conda/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Exploring code" />
 
-  <meta name="twitter:title" content="emacs" />
+  <meta name="twitter:title" content="Selecting which python to use with org-babel" />
+  <meta name="twitter:description" content="
+When working with org-babel, it&#39;s useful to be able to select from which
+environment python is run.  There&#39;s the obvious brute-force approach -
+activating the appropriate environment before …">
   <meta name="twitter:card" content="summary" />
   <meta name="generator" content="Hugo 0.71.1" />
   <link rel="alternate" href="https://hdyson.github.io/index.xml" type="application/rss+xml" title="Exploring code"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -155,9 +224,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="tags-heading">
+            <div class="posts-heading">
               
-                <h1>emacs</h1>
+                <h1>Selecting which python to use with org-babel</h1>
               
               
                 <hr class="small">
@@ -173,40 +242,10 @@
 
 
     
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        <div class="posts-list">
-          
-            <article class="post-preview">
-    <a href="https://hdyson.github.io/posts/org-babel-conda/">
-        <h2 class="post-title">Selecting which python to use with org-babel</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on June 7, 2020
-  
-  
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;hdyson
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
         <p>
 When working with <a href="https://orgmode.org/worg/org-contrib/babel/intro.html">org-babel</a>, it&#39;s useful to be able to select from which
 environment python is run.  There&#39;s the obvious brute-force approach -
@@ -216,134 +255,120 @@ in a running emacs.  Besides, I&#39;m a big advocate of launching emacs on
 startup, and only exiting it when you shutdown your computer.  So here, I&#39;ll
 show how to choose the python being run within org-babel.
 </p>
-        <a href="https://hdyson.github.io/posts/org-babel-conda/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://hdyson.github.io//tags/emacs/">emacs</a>&nbsp;
-        
-        <a href="https://hdyson.github.io//tags/org-mode/">org-mode</a>&nbsp;
-        
-        <a href="https://hdyson.github.io//tags/conda/">conda</a>&nbsp;
-        
-        <a href="https://hdyson.github.io//tags/virtual-environment/">virtual environment</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://hdyson.github.io/posts/making-init-files-intelligible/">
-        <h2 class="post-title">Making init files intelligible</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on October 15, 2019
-  
-  
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;hdyson
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>
-One of the issues with an editor as configurable as emacs is that an emacs
-.init.el file ends up an unmaintanable mess of barely understood code
-snippets, duplicate and contradictory settings, and a treasure trove of
-forgotten knowledge.
+<h3 id="headline-1">
+Identifying the python command to use
+</h3>
+<p>
+We need the full path for the python command inside the conda or other virtual
+environment.  If you already know this, feel free to skip ahead.
 </p>
 <p>
-We can do better.
+In your shell (if you want to do everything in emacs, <code>M-x shell</code> will launch
+one), activate your environment using the usual instructions.  Then run
+<code>which python</code>, and copy the shown path - we&#39;ll need it in the next step.
+</p>
+<h3 id="headline-2">
+Setting the org-mode buffer to use the correct python
+</h3>
+<p>
+Now that we have the path to the python executable, we just need to set the
+org-mode buffer to actually use it.  Use <code>M-x add-file-local-variable</code> to set
+the local varibale <code>org-babel-python-command</code> to the path of the python
+command (in double quotes) to use.  This will insert the definition of the
+local variable at the end of the buffer.  Now save the file, revert the
+buffer (<code>M-x revert-buffer)</code>, and confirm setting the local variable when
+prompted.
 </p>
 <p>
-So in this post I&#39;ll show you how to have a documented, human-readable emacs
-configuration file.
+Note that because this is local to a particular org-mode file, different files
+can run with different pythons.  Also, because this approach only relies on
+the path to the python executable, it&#39;s agnostic to whether ytou&#39;re using
+conda, venv or something more exotic.
 </p>
-        <a href="https://hdyson.github.io/posts/making-init-files-intelligible/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://hdyson.github.io//tags/emacs/">emacs</a>&nbsp;
-        
-        <a href="https://hdyson.github.io//tags/org-mode/">org-mode</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://hdyson.github.io/posts/complete-emacs-setup/">
-        <h2 class="post-title">Complete emacs setup</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on October 15, 2019
-  
-  
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;hdyson
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>
-Following on from <a href="https://boingboing.net/2016/09/30/finally-got-my-emacs-setup-jus.html">Boing Boing</a>, I finally got my emacs setup just how I like
-it:
+<h3 id="headline-3">
+Test that it works
+</h3>
+<p>
+The following snippet should return the path to your chosen python executable
+without quotes:
 </p>
-        <a href="https://hdyson.github.io/posts/complete-emacs-setup/" class="post-read-more">[Read More]</a>
-        
-    </div>
+<pre class="example">
+#+BEGIN_SRC python
+import sys
+return sys.exec_prefix
+#+END_SRC
 
-    
-    <div class="blog-tags">
-        
-        <a href="https://hdyson.github.io//tags/emacs/">emacs</a>&nbsp;
-        
-    </div>
-    
+#+RESULTS:
+: /Users/hdyson/anaconda3/envs/example
+</pre>
+<h3 id="headline-4">
+Isn&#39;t this just things behaving as described in the docs?
+</h3>
+<p>
+Pretty much - but I can never remember the <code>add-file-local-variable</code> command
+name, so this post is a note to myself.
+</p>
 
-</article>
+        
+          <div class="blog-tags">
+            
+              <a href="https://hdyson.github.io//tags/emacs/">emacs</a>&nbsp;
+            
+              <a href="https://hdyson.github.io//tags/org-mode/">org-mode</a>&nbsp;
+            
+              <a href="https://hdyson.github.io//tags/conda/">conda</a>&nbsp;
+            
+              <a href="https://hdyson.github.io//tags/virtual-environment/">virtual environment</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
           
-        </div>
+            
+          
+          
+                  <h4 class="see-also">See also</h4>
+                  <ul>
+                
+                
+                    <li><a href="/posts/making-init-files-intelligible/">Making init files intelligible</a></li>
+                
+                    <li><a href="/posts/complete-emacs-setup/">Complete emacs setup</a></li>
+                
+              </ul>
+
+          
         
-      </div>
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://hdyson.github.io/posts/automating-post-deployment/" data-toggle="tooltip" data-placement="top" title="Automating post deployment">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+	<script src="https://utteranc.es/client.js"
+		repo="hdyson/hdyson.github.io"
+		issue-term="title"
+		theme="github-light"
+		crossorigin="anonymous"
+		async>
+	</script>
+
+
+
+      
+
     </div>
   </div>
+</div>
 
       
 <footer>
@@ -362,7 +387,7 @@ it:
               </li>
           
           <li>
-            <a href="/tags/emacs/index.xml" title="RSS">
+            <a href="" title="RSS">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
