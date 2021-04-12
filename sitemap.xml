@@ -1,124 +1,82 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://hdyson.github.io/tags/conda/</loc>
-    <lastmod>2020-06-07T20:56:00+01:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://hdyson.github.io/tags/emacs/</loc>
-    <lastmod>2020-06-07T20:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-04-07T20:55:35+01:00</lastmod>
+  </url><url>
     <loc>https://hdyson.github.io/</loc>
+    <lastmod>2021-04-07T20:55:35+01:00</lastmod>
+  </url><url>
+    <loc>https://hdyson.github.io/posts/exploring-python-ligatures/</loc>
+    <lastmod>2021-04-07T20:55:35+01:00</lastmod>
+  </url><url>
+    <loc>https://hdyson.github.io/posts/</loc>
+    <lastmod>2021-04-07T20:55:35+01:00</lastmod>
+  </url><url>
+    <loc>https://hdyson.github.io/tags/python/</loc>
+    <lastmod>2021-04-07T20:55:35+01:00</lastmod>
+  </url><url>
+    <loc>https://hdyson.github.io/tags/</loc>
+    <lastmod>2021-04-07T20:55:35+01:00</lastmod>
+  </url><url>
+    <loc>https://hdyson.github.io/tags/conda/</loc>
     <lastmod>2020-06-07T20:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/tags/org-mode/</loc>
     <lastmod>2020-06-07T20:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hdyson.github.io/posts/</loc>
-    <lastmod>2020-06-07T20:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/posts/org-babel-conda/</loc>
     <lastmod>2020-06-07T20:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hdyson.github.io/tags/</loc>
-    <lastmod>2020-06-07T20:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/tags/virtual-environment/</loc>
     <lastmod>2020-06-07T20:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/posts/automating-post-deployment/</loc>
     <lastmod>2020-02-09T14:33:05+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/tags/blog-setup/</loc>
     <lastmod>2020-02-09T14:33:05+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/tags/github/</loc>
     <lastmod>2020-02-09T14:33:05+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/tags/github-actions/</loc>
     <lastmod>2020-02-09T14:33:05+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/tags/hugo/</loc>
     <lastmod>2020-02-09T14:33:05+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/posts/post-links/</loc>
     <lastmod>2020-01-30T22:09:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/posts/comment-setup/</loc>
     <lastmod>2019-11-10T20:02:48+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/tags/comments/</loc>
     <lastmod>2019-11-10T20:02:48+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/posts/deploying-to-github-pages/</loc>
     <lastmod>2019-10-27T19:52:03+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/tags/deployment/</loc>
     <lastmod>2019-10-27T19:52:03+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/posts/making-init-files-intelligible/</loc>
     <lastmod>2019-10-15T20:53:56+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/posts/complete-emacs-setup/</loc>
     <lastmod>2019-10-15T20:34:49+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/tags/theme/</loc>
     <lastmod>2019-10-13T20:47:12+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/posts/theme-setup/</loc>
     <lastmod>2019-10-13T20:47:12+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/posts/hugo-setup/</loc>
     <lastmod>2019-10-12T17:05:21+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hdyson.github.io/categories/</loc>
   </url>
-  
 </urlset>

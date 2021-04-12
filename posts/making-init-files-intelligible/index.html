@@ -14,13 +14,10 @@ One of the issues with an editor as configurable as emacs is that an emacs
 snippets, duplicate and contradictory settings, and a treasure trove of
 forgotten knowledge.
 
-
 We can do better.
 
-
 So in this post I&#39;ll show you how to have a documented, human-readable emacs
-configuration file.
-">
+configuration file.">
   <meta name="author" content="hdyson"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -69,7 +66,7 @@ configuration file.
     "name" : "hdyson"
   },
   "headline": "Making init files intelligible",
-  "description" : " One of the issues with an editor as configurable as emacs is that an emacs .init.el file ends up an unmaintanable mess of barely understood code snippets, duplicate and contradictory settings, and a treasure trove of forgotten knowledge.  We can do better.  So in this post I\u0026#39;ll show you how to have a documented, human-readable emacs configuration file. ",
+  "description" : " One of the issues with an editor as configurable as emacs is that an emacs .init.el file ends up an unmaintanable mess of barely understood code snippets, duplicate and contradictory settings, and a treasure trove of forgotten knowledge.\n We can do better.\n So in this post I\u0026#39;ll show you how to have a documented, human-readable emacs configuration file.\n",
   "inLanguage" : "en",
   "wordCount":  460 ,
   "datePublished" : "2019-10-15T20:53:56",
@@ -97,13 +94,10 @@ One of the issues with an editor as configurable as emacs is that an emacs
 snippets, duplicate and contradictory settings, and a treasure trove of
 forgotten knowledge.
 
-
 We can do better.
 
-
 So in this post I&#39;ll show you how to have a documented, human-readable emacs
-configuration file.
-">
+configuration file.">
 <meta property="og:url" content="https://hdyson.github.io/posts/making-init-files-intelligible/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Exploring code" />
@@ -114,7 +108,7 @@ One of the issues with an editor as configurable as emacs is that an emacs
 .init.el file ends up an unmaintanable mess of barely understood code
 snippets, duplicate and contradictory settings, and a …">
   <meta name="twitter:card" content="summary" />
-  <meta name="generator" content="Hugo 0.71.1" />
+  <meta name="generator" content="Hugo 0.82.0" />
   <link rel="alternate" href="https://hdyson.github.io/index.xml" type="application/rss+xml" title="Exploring code"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://hdyson.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -258,36 +252,37 @@ snippets, duplicate and contradictory settings, and a …">
 One of the issues with an editor as configurable as emacs is that an emacs
 .init.el file ends up an unmaintanable mess of barely understood code
 snippets, duplicate and contradictory settings, and a treasure trove of
-forgotten knowledge.
-</p>
+forgotten knowledge.</p>
 <p>
-We can do better.
-</p>
+We can do better.</p>
 <p>
 So in this post I&#39;ll show you how to have a documented, human-readable emacs
-configuration file.
-</p>
+configuration file.</p>
+<div id="outline-container-headline-1" class="outline-3">
 <h3 id="headline-1">
 The problem
 </h3>
+<div id="outline-text-headline-1" class="outline-text-3">
 <p>
 Emacs is massively customisable.  These customisations are stored in elisp
 source files (e.g. <code>~/.emacs.d/init.el</code>), which are interpreted by emacs on
 startup.  The difficulty is that these files are usually composed of various
 snippets from a variety of sources, which results in a
-configuration that can be hard to read and maintain.
-</p>
+configuration that can be hard to read and maintain.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-3">
 <h3 id="headline-2">
 The solution
 </h3>
+<div id="outline-text-headline-2" class="outline-text-3">
 <p>
 So how do we avoid this?  You can simply comment the elisp code, but in
 reality this doesn&#39;t scale very well.  The same setting gets duplicated in
 multiple locations, and worse.  So instead, we want a hierarchical structure,
 where there&#39;s a correct place for each setting.  This means that when you
 decide to fine tune the behaviour of a particular setting, you know where to
-look for the current setting.
-</p>
+look for the current setting.</p>
 <p>
 The magic bullet to make this work is <a href="https://orgmode.org">org-mode</a>.  This allows creating a
 structured document, which has code snippets in it.  Note that we&#39;ve reversed
@@ -298,46 +293,37 @@ emacs.  This is where <code>org-babel</code> comes in.  This translates the <cod
 file and extracts all the code blocks.  The documentation includes an example
 that does exactly <a href="https://orgmode.org/worg/org-contrib/babel/intro.html#literate-emacs-init">what we need</a>.  This example <code>init.el</code> translates the
 document into code on starting up emacs, which is then interpreted by emacs.
-So the init file is always up to date whenever you restart emacs.
-</p>
+So the init file is always up to date whenever you restart emacs.</p>
 <p>
 I recommend keeping your <code>~/.emacs.d/</code> directory as a git repository, synced
 to <a href="https://github.com">Github</a>.  As a bonus, github renders the <code>org-mode</code> file in the same fashion
 that it renders markdown or jupyter notebooks.  If you choose to name the main
 configuration file <code>README.org</code>, then this is the page that renders as the
-front page of the repository.
-</p>
+front page of the repository.</p>
 <p>
-Here&#39;s some examples:
-</p>
+Here&#39;s some examples:</p>
 <ul>
 <li>
-<p>
-Raw (i.e. unrendered) <a href="https://raw.githubusercontent.com/hdyson/Emacs-configuration/62013322cadde299168cb5e530377051ec05e265/readme.org">readme.org</a> - this is the form in which the
+<p>Raw (i.e. unrendered) <a href="https://raw.githubusercontent.com/hdyson/Emacs-configuration/62013322cadde299168cb5e530377051ec05e265/readme.org">readme.org</a> - this is the form in which the
 configuration file is written.  Note that <code>org-mode</code> makes this easier to
-use when opened in emacs rather than a web browser.
-</p>
+use when opened in emacs rather than a web browser.</p>
 </li>
 <li>
-<p>
-How Github <a href="https://github.com/hdyson/Emacs-configuration/blob/62013322cadde299168cb5e530377051ec05e265/readme.org">renders the file</a>.  Much more readable.  Note that this link and
+<p>How Github <a href="https://github.com/hdyson/Emacs-configuration/blob/62013322cadde299168cb5e530377051ec05e265/readme.org">renders the file</a>.  Much more readable.  Note that this link and
 the previous link are to a snapshot in time; the current <code>readme.org</code> may
-have diverged from this.
-</p>
+have diverged from this.</p>
 </li>
 <li>
-<p>
-An example of <a href="https://pages.sachachua.com/.emacs.d/Sacha.html">how well this scales</a>.  This is a link to Sacha Chua&#39;s config
-(of <a href="https://sachachua.com/blog/category/geek/emacs/emacs-news">emacs news fame</a>).
-</p>
+<p>An example of <a href="https://pages.sachachua.com/.emacs.d/Sacha.html">how well this scales</a>.  This is a link to Sacha Chua&#39;s config
+(of <a href="https://sachachua.com/blog/category/geek/emacs/emacs-news">emacs news fame</a>).</p>
 </li>
 <li>
-<p>
-A reminder that you&#39;ll need some <a href="https://orgmode.org/worg/org-contrib/babel/intro.html#literate-emacs-init">boilerplate</a> in your <code>~/.emacs.d/init.el</code>
-file.
-</p>
+<p>A reminder that you&#39;ll need some <a href="https://orgmode.org/worg/org-contrib/babel/intro.html#literate-emacs-init">boilerplate</a> in your <code>~/.emacs.d/init.el</code>
+file.</p>
 </li>
 </ul>
+</div>
+</div>
 
         
           <div class="blog-tags">
@@ -435,7 +421,7 @@ file.
 
           &nbsp;&bull;&nbsp;&copy;
           
-            2020
+            2021
           
 
           
@@ -445,7 +431,7 @@ file.
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.71.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.82.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>

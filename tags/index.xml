@@ -6,10 +6,24 @@
     <description>Recent content in Tags on Exploring code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jun 2020 20:56:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 07 Apr 2021 20:55:35 +0100</lastBuildDate><atom:link href="https://hdyson.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>emacs</title>
+      <link>https://hdyson.github.io/tags/emacs/</link>
+      <pubDate>Wed, 07 Apr 2021 20:55:35 +0100</pubDate>
+      
+      <guid>https://hdyson.github.io/tags/emacs/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://hdyson.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>Python</title>
+      <link>https://hdyson.github.io/tags/python/</link>
+      <pubDate>Wed, 07 Apr 2021 20:55:35 +0100</pubDate>
+      
+      <guid>https://hdyson.github.io/tags/python/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>conda</title>
@@ -17,15 +31,6 @@
       <pubDate>Sun, 07 Jun 2020 20:56:00 +0100</pubDate>
       
       <guid>https://hdyson.github.io/tags/conda/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>emacs</title>
-      <link>https://hdyson.github.io/tags/emacs/</link>
-      <pubDate>Sun, 07 Jun 2020 20:56:00 +0100</pubDate>
-      
-      <guid>https://hdyson.github.io/tags/emacs/</guid>
       <description></description>
     </item>
     

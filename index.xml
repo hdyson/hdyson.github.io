@@ -6,10 +6,17 @@
     <description>Recent content on Exploring code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jun 2020 20:56:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://hdyson.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 07 Apr 2021 20:55:35 +0100</lastBuildDate><atom:link href="https://hdyson.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploring Python Ligatures</title>
+      <link>https://hdyson.github.io/posts/exploring-python-ligatures/</link>
+      <pubDate>Wed, 07 Apr 2021 20:55:35 +0100</pubDate>
+      
+      <guid>https://hdyson.github.io/posts/exploring-python-ligatures/</guid>
+      <description>&lt;p&gt;
+Pycharm has some pretty ligature support.  It&amp;#39;d be good to have similar in
+emacs - let&amp;#39;s take a look at how to set that up.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Selecting which python to use with org-babel</title>
@@ -24,8 +31,7 @@ activating the appropriate environment before launching emacs - but quitting
 and restarting emacs is a lot of hassle if you need to change the environment
 in a running emacs.  Besides, I&amp;#39;m a big advocate of launching emacs on
 startup, and only exiting it when you shutdown your computer.  So here, I&amp;#39;ll
-show how to choose the python being run within org-babel.
-&lt;/p&gt;</description>
+show how to choose the python being run within org-babel.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -34,14 +40,15 @@ show how to choose the python being run within org-babel.
       <pubDate>Sun, 09 Feb 2020 14:33:05 +0000</pubDate>
       
       <guid>https://hdyson.github.io/posts/automating-post-deployment/</guid>
-      <description>&lt;h2 id=&#34;headline-1&#34;&gt;
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
 The problem
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 Publishing posts via hugo is slightly more manual than I&amp;#39;d like.  The trigger
 for this post was &amp;#34;Can we automate this with &lt;a href=&#34;https://github.com/features/actions&#34;&gt;Github actions&lt;/a&gt;?&amp;#34;, but it turns
-out the solution was much simpler.
-&lt;/p&gt;</description>
+out the solution was much simpler.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -52,8 +59,7 @@ out the solution was much simpler.
       <guid>https://hdyson.github.io/posts/post-links/</guid>
       <description>&lt;p&gt;
 It&amp;#39;s not obvious (to me, anyway) how to use &lt;a href=&#34;https://gohugo.io/content-management/cross-references/&#34;&gt;hugo cross-reference links&lt;/a&gt; with
-org-mode format posts.  This very short post gives an example of how to do so.
-&lt;/p&gt;</description>
+org-mode format posts.  This very short post gives an example of how to do so.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -63,8 +69,7 @@ org-mode format posts.  This very short post gives an example of how to do so.
       
       <guid>https://hdyson.github.io/posts/comment-setup/</guid>
       <description>&lt;p&gt;
-Now to add some comments to this blog.  &lt;a href=&#34;https://utteranc.es&#34;&gt;Utterances&lt;/a&gt; looks promising.  It uses github issue comments to provide the commenting infrastructure, so should be easy to setup.
-&lt;/p&gt;</description>
+Now to add some comments to this blog.  &lt;a href=&#34;https://utteranc.es&#34;&gt;Utterances&lt;/a&gt; looks promising.  It uses github issue comments to provide the commenting infrastructure, so should be easy to setup.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -74,8 +79,7 @@ Now to add some comments to this blog.  &lt;a href=&#34;https://utteranc.es&#34;
       
       <guid>https://hdyson.github.io/posts/deploying-to-github-pages/</guid>
       <description>&lt;p&gt;
-A quick summary of deploying Hugo this generated site to &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github pages&lt;/a&gt; (and hence &lt;a href=&#34;https://hdyson.dev&#34;&gt;hdyson.dev&lt;/a&gt;) via the instructions from the &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;Hugo docs&lt;/a&gt;.
-&lt;/p&gt;</description>
+A quick summary of deploying this Hugo generated site to &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github pages&lt;/a&gt; (and hence &lt;a href=&#34;https://hdyson.dev&#34;&gt;hdyson.dev&lt;/a&gt;) via the instructions from the &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;Hugo docs&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -88,15 +92,12 @@ A quick summary of deploying Hugo this generated site to &lt;a href=&#34;https:/
 One of the issues with an editor as configurable as emacs is that an emacs
 .init.el file ends up an unmaintanable mess of barely understood code
 snippets, duplicate and contradictory settings, and a treasure trove of
-forgotten knowledge.
-&lt;/p&gt;
+forgotten knowledge.&lt;/p&gt;
 &lt;p&gt;
-We can do better.
-&lt;/p&gt;
+We can do better.&lt;/p&gt;
 &lt;p&gt;
 So in this post I&amp;#39;ll show you how to have a documented, human-readable emacs
-configuration file.
-&lt;/p&gt;</description>
+configuration file.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -107,8 +108,7 @@ configuration file.
       <guid>https://hdyson.github.io/posts/complete-emacs-setup/</guid>
       <description>&lt;p&gt;
 Following on from &lt;a href=&#34;https://boingboing.net/2016/09/30/finally-got-my-emacs-setup-jus.html&#34;&gt;Boing Boing&lt;/a&gt;, I finally got my emacs setup just how I like
-it:
-&lt;/p&gt;</description>
+it:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -118,8 +118,7 @@ it:
       
       <guid>https://hdyson.github.io/posts/theme-setup/</guid>
       <description>&lt;p&gt;
-I like the look of the &lt;a href=&#34;https://themes.gohugo.io/beautifulhugo/&#34;&gt;Beautiful Hugo&lt;/a&gt; theme, so let&amp;#39;s see how easy it is to setup.
-&lt;/p&gt;</description>
+I like the look of the &lt;a href=&#34;https://themes.gohugo.io/beautifulhugo/&#34;&gt;Beautiful Hugo&lt;/a&gt; theme, so let&amp;#39;s see how easy it is to setup.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -131,8 +130,7 @@ I like the look of the &lt;a href=&#34;https://themes.gohugo.io/beautifulhugo/&#
       <description>&lt;p&gt;
 Exploring using &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; as a static site generator, partially because it supports
 &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt;, and partially because there&amp;#39;s some additional widgets for hugo that
-I&amp;#39;d like to explore.  Below are the steps followed to create this post:
-&lt;/p&gt;</description>
+I&amp;#39;d like to explore.  Below are the steps followed to create this post:&lt;/p&gt;</description>
     </item>
     
   </channel>

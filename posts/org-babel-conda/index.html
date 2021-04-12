@@ -15,8 +15,7 @@ activating the appropriate environment before launching emacs - but quitting
 and restarting emacs is a lot of hassle if you need to change the environment
 in a running emacs.  Besides, I&#39;m a big advocate of launching emacs on
 startup, and only exiting it when you shutdown your computer.  So here, I&#39;ll
-show how to choose the python being run within org-babel.
-">
+show how to choose the python being run within org-babel.">
   <meta name="author" content="hdyson"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -65,7 +64,7 @@ show how to choose the python being run within org-babel.
     "name" : "hdyson"
   },
   "headline": "Selecting which python to use with org-babel",
-  "description" : " When working with org-babel, it\u0026#39;s useful to be able to select from which environment python is run. There\u0026#39;s the obvious brute-force approach - activating the appropriate environment before launching emacs - but quitting and restarting emacs is a lot of hassle if you need to change the environment in a running emacs. Besides, I\u0026#39;m a big advocate of launching emacs on startup, and only exiting it when you shutdown your computer. So here, I\u0026#39;ll show how to choose the python being run within org-babel. ",
+  "description" : " When working with org-babel, it\u0026#39;s useful to be able to select from which environment python is run. There\u0026#39;s the obvious brute-force approach - activating the appropriate environment before launching emacs - but quitting and restarting emacs is a lot of hassle if you need to change the environment in a running emacs. Besides, I\u0026#39;m a big advocate of launching emacs on startup, and only exiting it when you shutdown your computer. So here, I\u0026#39;ll show how to choose the python being run within org-babel.\n",
   "inLanguage" : "en",
   "wordCount":  341 ,
   "datePublished" : "2020-06-07T20:56:00",
@@ -94,8 +93,7 @@ activating the appropriate environment before launching emacs - but quitting
 and restarting emacs is a lot of hassle if you need to change the environment
 in a running emacs.  Besides, I&#39;m a big advocate of launching emacs on
 startup, and only exiting it when you shutdown your computer.  So here, I&#39;ll
-show how to choose the python being run within org-babel.
-">
+show how to choose the python being run within org-babel.">
 <meta property="og:url" content="https://hdyson.github.io/posts/org-babel-conda/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Exploring code" />
@@ -106,7 +104,7 @@ When working with org-babel, it&#39;s useful to be able to select from which
 environment python is run.  There&#39;s the obvious brute-force approach -
 activating the appropriate environment before …">
   <meta name="twitter:card" content="summary" />
-  <meta name="generator" content="Hugo 0.71.1" />
+  <meta name="generator" content="Hugo 0.82.0" />
   <link rel="alternate" href="https://hdyson.github.io/index.xml" type="application/rss+xml" title="Exploring code"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://hdyson.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -253,23 +251,26 @@ activating the appropriate environment before launching emacs - but quitting
 and restarting emacs is a lot of hassle if you need to change the environment
 in a running emacs.  Besides, I&#39;m a big advocate of launching emacs on
 startup, and only exiting it when you shutdown your computer.  So here, I&#39;ll
-show how to choose the python being run within org-babel.
-</p>
+show how to choose the python being run within org-babel.</p>
+<div id="outline-container-headline-1" class="outline-3">
 <h3 id="headline-1">
 Identifying the python command to use
 </h3>
+<div id="outline-text-headline-1" class="outline-text-3">
 <p>
 We need the full path for the python command inside the conda or other virtual
-environment.  If you already know this, feel free to skip ahead.
-</p>
+environment.  If you already know this, feel free to skip ahead.</p>
 <p>
 In your shell (if you want to do everything in emacs, <code>M-x shell</code> will launch
 one), activate your environment using the usual instructions.  Then run
-<code>which python</code>, and copy the shown path - we&#39;ll need it in the next step.
-</p>
+<code>which python</code>, and copy the shown path - we&#39;ll need it in the next step.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-3">
 <h3 id="headline-2">
 Setting the org-mode buffer to use the correct python
 </h3>
+<div id="outline-text-headline-2" class="outline-text-3">
 <p>
 Now that we have the path to the python executable, we just need to set the
 org-mode buffer to actually use it.  Use <code>M-x add-file-local-variable</code> to set
@@ -277,21 +278,22 @@ the local varibale <code>org-babel-python-command</code> to the path of the pyth
 command (in double quotes) to use.  This will insert the definition of the
 local variable at the end of the buffer.  Now save the file, revert the
 buffer (<code>M-x revert-buffer)</code>, and confirm setting the local variable when
-prompted.
-</p>
+prompted.</p>
 <p>
 Note that because this is local to a particular org-mode file, different files
 can run with different pythons.  Also, because this approach only relies on
 the path to the python executable, it&#39;s agnostic to whether ytou&#39;re using
-conda, venv or something more exotic.
-</p>
+conda, venv or something more exotic.</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
 <h3 id="headline-3">
 Test that it works
 </h3>
+<div id="outline-text-headline-3" class="outline-text-3">
 <p>
 The following snippet should return the path to your chosen python executable
-without quotes:
-</p>
+without quotes:</p>
 <pre class="example">
 #+BEGIN_SRC python
 import sys
@@ -301,13 +303,18 @@ return sys.exec_prefix
 #+RESULTS:
 : /Users/hdyson/anaconda3/envs/example
 </pre>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
 <h3 id="headline-4">
 Isn&#39;t this just things behaving as described in the docs?
 </h3>
+<div id="outline-text-headline-4" class="outline-text-3">
 <p>
 Pretty much - but I can never remember the <code>add-file-local-variable</code> command
-name, so this post is a note to myself.
-</p>
+name, so this post is a note to myself.</p>
+</div>
+</div>
 
         
           <div class="blog-tags">
@@ -351,6 +358,10 @@ name, so this post is a note to myself.
               <a href="https://hdyson.github.io/posts/automating-post-deployment/" data-toggle="tooltip" data-placement="top" title="Automating post deployment">&larr; Previous Post</a>
             </li>
           
+          
+            <li class="next">
+              <a href="https://hdyson.github.io/posts/exploring-python-ligatures/" data-toggle="tooltip" data-placement="top" title="Exploring Python Ligatures">Next Post &rarr;</a>
+            </li>
           
         </ul>
       
@@ -405,7 +416,7 @@ name, so this post is a note to myself.
 
           &nbsp;&bull;&nbsp;&copy;
           
-            2020
+            2021
           
 
           
@@ -415,7 +426,7 @@ name, so this post is a note to myself.
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.71.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.82.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>

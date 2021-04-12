@@ -11,8 +11,7 @@
   <meta name="description" content="
 Exploring using Hugo as a static site generator, partially because it supports
 org-mode, and partially because there&#39;s some additional widgets for hugo that
-I&#39;d like to explore.  Below are the steps followed to create this post:
-">
+I&#39;d like to explore.  Below are the steps followed to create this post:">
   <meta name="author" content="hdyson"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -61,7 +60,7 @@ I&#39;d like to explore.  Below are the steps followed to create this post:
     "name" : "hdyson"
   },
   "headline": "Hugo setup in org format",
-  "description" : " Exploring using Hugo as a static site generator, partially because it supports org-mode, and partially because there\u0026#39;s some additional widgets for hugo that I\u0026#39;d like to explore. Below are the steps followed to create this post: ",
+  "description" : " Exploring using Hugo as a static site generator, partially because it supports org-mode, and partially because there\u0026#39;s some additional widgets for hugo that I\u0026#39;d like to explore. Below are the steps followed to create this post:\n",
   "inLanguage" : "en",
   "wordCount":  163 ,
   "datePublished" : "2019-10-12T17:05:21",
@@ -86,8 +85,7 @@ I&#39;d like to explore.  Below are the steps followed to create this post:
 <meta property="og:description" content="
 Exploring using Hugo as a static site generator, partially because it supports
 org-mode, and partially because there&#39;s some additional widgets for hugo that
-I&#39;d like to explore.  Below are the steps followed to create this post:
-">
+I&#39;d like to explore.  Below are the steps followed to create this post:">
 <meta property="og:url" content="https://hdyson.github.io/posts/hugo-setup/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Exploring code" />
@@ -98,7 +96,7 @@ Exploring using Hugo as a static site generator, partially because it supports
 org-mode, and partially because there&#39;s some additional widgets for hugo that
 I&#39;d like to explore.  Below are …">
   <meta name="twitter:card" content="summary" />
-  <meta name="generator" content="Hugo 0.71.1" />
+  <meta name="generator" content="Hugo 0.82.0" />
   <link rel="alternate" href="https://hdyson.github.io/index.xml" type="application/rss+xml" title="Exploring code"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://hdyson.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -241,11 +239,12 @@ I&#39;d like to explore.  Below are …">
         <p>
 Exploring using <a href="https://gohugo.io">Hugo</a> as a static site generator, partially because it supports
 <a href="https://orgmode.org">org-mode</a>, and partially because there&#39;s some additional widgets for hugo that
-I&#39;d like to explore.  Below are the steps followed to create this post:
-</p>
+I&#39;d like to explore.  Below are the steps followed to create this post:</p>
+<div id="outline-container-headline-1" class="outline-3">
 <h3 id="headline-1">
 Experimenting with hugo: initial setup
 </h3>
+<div id="outline-text-headline-1" class="outline-text-3">
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install hugo
 hugo new site quickstart
@@ -254,56 +253,65 @@ git init
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
 echo <span style="color:#e6db74">&#39;theme = &#34;ananke&#34;&#39;</span> &gt;&gt; config.toml</code></pre></div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-3">
 <h3 id="headline-2">
 Adding a post:
 </h3>
+<div id="outline-text-headline-2" class="outline-text-3">
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new posts/hugo-setup.org</code></pre></div>
 </div>
 <p>
-Obviously, change <code>hugo-setup.org</code> for subsequent posts.
-</p>
+Obviously, change <code>hugo-setup.org</code> for subsequent posts.</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
 <h3 id="headline-3">
 Change them to hyde:
 </h3>
+<div id="outline-text-headline-3" class="outline-text-3">
 <p>
-It&#39;s fairly ubiquitous, but let&#39;s start with <a href="https://themes.gohugo.io/hyde/">hyde</a> as a theme anyway:
-</p>
+It&#39;s fairly ubiquitous, but let&#39;s start with <a href="https://themes.gohugo.io/hyde/">hyde</a> as a theme anyway:</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd themes/
 git clone https://github.com/spf13/hyde.git
 cd -</code></pre></div>
 </div>
 <p>
-Finally, edit <code>config.toml</code> to update the theme.
-</p>
+Finally, edit <code>config.toml</code> to update the theme.</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
 <h3 id="headline-4">
 Running server:
 </h3>
+<div id="outline-text-headline-4" class="outline-text-3">
 <p>
- Automaticically reloads when content changes.
-</p>
+ Automaticically reloads when content changes.</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server -D</code></pre></div>
 </div>
 <p>
- -D flag includes draft posts.
-</p>
+ -D flag includes draft posts.</p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
 <h3 id="headline-5">
 Notes:
 </h3>
+<div id="outline-text-headline-5" class="outline-text-3">
 <ol>
 <li>
-<p>
-Important to note that if the <code>&lt;!--more--&gt;</code> line is missing in a post, the post remains unformatted.
-</p>
+<p>Important to note that if the <code>&lt;!--more--&gt;</code> line is missing in a post, the post remains unformatted.</p>
 </li>
 <li>
-<p>
-Images can be referenced in a as <code>./&lt;filename&gt;</code> if it&#39;s stored in a directory of the same name as the post without the <code>.org</code> suffix.
-</p>
+<p>Images can be referenced in a as <code>./&lt;filename&gt;</code> if it&#39;s stored in a directory of the same name as the post without the <code>.org</code> suffix.</p>
 </li>
 </ol>
+</div>
+</div>
 
         
           <div class="blog-tags">
@@ -403,7 +411,7 @@ Images can be referenced in a as <code>./&lt;filename&gt;</code> if it&#39;s sto
 
           &nbsp;&bull;&nbsp;&copy;
           
-            2020
+            2021
           
 
           
@@ -413,7 +421,7 @@ Images can be referenced in a as <code>./&lt;filename&gt;</code> if it&#39;s sto
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.71.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.82.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>

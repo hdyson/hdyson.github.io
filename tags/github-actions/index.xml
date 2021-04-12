@@ -6,25 +6,22 @@
     <description>Recent content in Github actions on Exploring code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Feb 2020 14:33:05 +0000</lastBuildDate>
-    
-	<atom:link href="https://hdyson.github.io/tags/github-actions/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 09 Feb 2020 14:33:05 +0000</lastBuildDate><atom:link href="https://hdyson.github.io/tags/github-actions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automating post deployment</title>
       <link>https://hdyson.github.io/posts/automating-post-deployment/</link>
       <pubDate>Sun, 09 Feb 2020 14:33:05 +0000</pubDate>
       
       <guid>https://hdyson.github.io/posts/automating-post-deployment/</guid>
-      <description>&lt;h2 id=&#34;headline-1&#34;&gt;
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
 The problem
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 Publishing posts via hugo is slightly more manual than I&amp;#39;d like.  The trigger
 for this post was &amp;#34;Can we automate this with &lt;a href=&#34;https://github.com/features/actions&#34;&gt;Github actions&lt;/a&gt;?&amp;#34;, but it turns
-out the solution was much simpler.
-&lt;/p&gt;</description>
+out the solution was much simpler.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -6,25 +6,22 @@
     <description>Recent content in Hugo on Exploring code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Feb 2020 14:33:05 +0000</lastBuildDate>
-    
-	<atom:link href="https://hdyson.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 09 Feb 2020 14:33:05 +0000</lastBuildDate><atom:link href="https://hdyson.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automating post deployment</title>
       <link>https://hdyson.github.io/posts/automating-post-deployment/</link>
       <pubDate>Sun, 09 Feb 2020 14:33:05 +0000</pubDate>
       
       <guid>https://hdyson.github.io/posts/automating-post-deployment/</guid>
-      <description>&lt;h2 id=&#34;headline-1&#34;&gt;
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
 The problem
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 Publishing posts via hugo is slightly more manual than I&amp;#39;d like.  The trigger
 for this post was &amp;#34;Can we automate this with &lt;a href=&#34;https://github.com/features/actions&#34;&gt;Github actions&lt;/a&gt;?&amp;#34;, but it turns
-out the solution was much simpler.
-&lt;/p&gt;</description>
+out the solution was much simpler.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,8 +32,7 @@ out the solution was much simpler.
       <guid>https://hdyson.github.io/posts/post-links/</guid>
       <description>&lt;p&gt;
 It&amp;#39;s not obvious (to me, anyway) how to use &lt;a href=&#34;https://gohugo.io/content-management/cross-references/&#34;&gt;hugo cross-reference links&lt;/a&gt; with
-org-mode format posts.  This very short post gives an example of how to do so.
-&lt;/p&gt;</description>
+org-mode format posts.  This very short post gives an example of how to do so.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -46,8 +42,7 @@ org-mode format posts.  This very short post gives an example of how to do so.
       
       <guid>https://hdyson.github.io/posts/theme-setup/</guid>
       <description>&lt;p&gt;
-I like the look of the &lt;a href=&#34;https://themes.gohugo.io/beautifulhugo/&#34;&gt;Beautiful Hugo&lt;/a&gt; theme, so let&amp;#39;s see how easy it is to setup.
-&lt;/p&gt;</description>
+I like the look of the &lt;a href=&#34;https://themes.gohugo.io/beautifulhugo/&#34;&gt;Beautiful Hugo&lt;/a&gt; theme, so let&amp;#39;s see how easy it is to setup.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -59,8 +54,7 @@ I like the look of the &lt;a href=&#34;https://themes.gohugo.io/beautifulhugo/&#
       <description>&lt;p&gt;
 Exploring using &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; as a static site generator, partially because it supports
 &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt;, and partially because there&amp;#39;s some additional widgets for hugo that
-I&amp;#39;d like to explore.  Below are the steps followed to create this post:
-&lt;/p&gt;</description>
+I&amp;#39;d like to explore.  Below are the steps followed to create this post:&lt;/p&gt;</description>
     </item>
     
   </channel>
