@@ -7,10 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Exploring Python Ligatures - Exploring code</title>
-  <meta name="description" content="
-Pycharm has some pretty ligature support.  It&#39;d be good to have similar in
-emacs - let&#39;s take a look at how to set that up.">
+  <title>Posts - Exploring code</title>
   <meta name="author" content="hdyson"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -31,67 +28,13 @@ emacs - let&#39;s take a look at how to set that up.">
   
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@id": "https:\/\/hdyson.github.io\/",
-          "name": "home"
-        }
-    },{
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@id": "https:\/\/hdyson.github.io\/posts\/exploring-python-ligatures\/",
-          "name": "Exploring python ligatures"
-        }
-    }]
-}
-</script><script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Article",
-  "author": {
-    "name" : "hdyson"
-  },
-  "headline": "Exploring Python Ligatures",
-  "description" : " Pycharm has some pretty ligature support. It\u0026#39;d be good to have similar in emacs - let\u0026#39;s take a look at how to set that up.\n",
-  "inLanguage" : "en",
-  "wordCount":  229 ,
-  "datePublished" : "2021-04-07T20:55:35",
-  "dateModified" : "2021-04-07T20:55:35",
-  "image" : "https:\/\/hdyson.github.io\/",
-  "keywords" : [ "Emacs, Python" ],
-  "mainEntityOfPage" : "https:\/\/hdyson.github.io\/posts\/exploring-python-ligatures\/",
-  "publisher" : {
-    "@type": "Organization",
-    "name" : "https:\/\/hdyson.github.io\/",
-    "logo" : {
-        "@type" : "ImageObject",
-        "url" : "https:\/\/hdyson.github.io\/",
-        "height" :  60 ,
-        "width" :  60
-    }
-  }
-}
-</script>
 
-<meta property="og:title" content="Exploring Python Ligatures" />
-<meta property="og:description" content="
-Pycharm has some pretty ligature support.  It&#39;d be good to have similar in
-emacs - let&#39;s take a look at how to set that up.">
-<meta property="og:url" content="https://hdyson.github.io/posts/exploring-python-ligatures/" />
+<meta property="og:title" content="Posts" />
+<meta property="og:url" content="https://hdyson.github.io/posts/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Exploring code" />
 
-  <meta name="twitter:title" content="Exploring Python Ligatures" />
-  <meta name="twitter:description" content="
-Pycharm has some pretty ligature support.  It&#39;d be good to have similar in
-emacs - let&#39;s take a look at how to set that up.">
+  <meta name="twitter:title" content="Posts" />
   <meta name="twitter:card" content="summary" />
   <meta name="generator" content="Hugo 0.82.0" />
   <link rel="alternate" href="https://hdyson.github.io/index.xml" type="application/rss+xml" title="Exploring code"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -213,7 +156,7 @@ emacs - let&#39;s take a look at how to set that up.">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="posts-heading">
               
-                <h1>Exploring Python Ligatures</h1>
+                <h1>Posts</h1>
               
               
                 <hr class="small">
@@ -229,104 +172,74 @@ emacs - let&#39;s take a look at how to set that up.">
 
 
     
-<div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <article role="main" class="blog-post">
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="posts-list">
+          
+            <article class="post-preview">
+    <a href="https://hdyson.github.io/posts/hugo-setup/">
+        <h2 class="post-title">Hugo setup in org format</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;hdyson
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
         <p>
-Pycharm has some pretty ligature support.  It&#39;d be good to have similar in
-emacs - let&#39;s take a look at how to set that up.</p>
-<div id="outline-container-headline-1" class="outline-3">
-<h3 id="headline-1">
-Ligatures for python
-</h3>
-<div id="outline-text-headline-1" class="outline-text-3">
-<p>
-So ligature support is built in to emacs, via <code>prettify-symbols-mode</code>.  This
-means we just need to activate this along with <code>python-mode</code>, and then define
-some symbols to replace.</p>
-<p>
-My target is to have ligatures enabled for python mode only, rather than
-globally, which means <code>global-prettify-symbols-mode</code> is not the answer.</p>
-<p>
-By default, in python mode, <code>prettify-symbols</code> replaces <code>lambda</code>, <code>and</code>, and
-<code>or</code> with symbols (check the buffer local variable <code>prettify-symbols-alist</code>
-for the current value in a buffer).  Let&#39;s add a few more symbols.  From <a href="http://www.aliquote.org/post/enliven-your-emacs/">this
-aliquote blog post</a>, there&#39;s a few suitable suggestions:</p>
-<div class="src src-emacs-lisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">    (defun add-python-mode-symbols ()
-	    (<span style="color:#a6e22e">mapc</span> (lambda (pair) (push pair prettify-symbols-alist))
-	     <span style="color:#f92672">&#39;</span>(
-		(<span style="color:#e6db74">&#34;-&gt;&#34;</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">8594</span>)
-		(<span style="color:#e6db74">&#34;=&gt;&#34;</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">8658</span>)
-		(<span style="color:#e6db74">&#34;&lt;=&#34;</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">8804</span>)
-		(<span style="color:#e6db74">&#34;&gt;=&#34;</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">8805</span>)
-		(<span style="color:#e6db74">&#34;&lt;-&#34;</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">8592</span>)
-		(<span style="color:#e6db74">&#34;!=&#34;</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">8800</span>)
-		)))
-
-    (add-hook <span style="color:#e6db74">&#39;python-mode-hook</span> (lambda ()
-				  (add-python-mode-symbols)
-				  (prettify-symbols-mode <span style="color:#66d9ef">t</span>)
-				  ))</code></pre></div>
-</div>
-<p>
-<a href="http://www.modernemacs.com/post/prettify-mode/">This modern emacs blog post</a> describes using <code>describe-char</code> and <code>insert-char</code>
-to work out the number needed for a particular symbol, and the use of <code>mapc</code>
-for adding the symbols in a sensible manner.  I&#39;ve opted to isolate the
-definitions in a function to make it a little more transparent what is being
-added to the python hook.  I think (but haven&#39;t confirmed) that the symbols
-list needs to be defined before enabling <code>prettify-symbols-mode</code>.</p>
-</div>
-</div>
-
+Exploring using <a href="https://gohugo.io">Hugo</a> as a static site generator, partially because it supports
+<a href="https://orgmode.org">org-mode</a>, and partially because there&#39;s some additional widgets for hugo that
+I&#39;d like to explore.  Below are the steps followed to create this post:</p>
+        <a href="https://hdyson.github.io/posts/hugo-setup/" class="post-read-more">[Read More]</a>
         
-          <div class="blog-tags">
+    </div>
+
+    
+    <div class="blog-tags">
+        
+        <a href="https://hdyson.github.io//tags/hugo/">Hugo</a>&nbsp;
+        
+        <a href="https://hdyson.github.io//tags/blog-setup/">Blog setup</a>&nbsp;
+        
+    </div>
+    
+
+</article>
+          
+        </div>
+        
+          <ul class="pager main-pager">
             
-              <a href="https://hdyson.github.io//tags/emacs/">Emacs</a>&nbsp;
+              <li class="previous">
+                <a href="https://hdyson.github.io/posts/page/1/">&larr; Newer Posts</a>
+              </li>
             
-              <a href="https://hdyson.github.io//tags/python/">Python</a>&nbsp;
             
-          </div>
+          </ul>
         
-
-        
-
-        
-          
-          
-        
-      </article>
-
-      
-        <ul class="pager blog-pager">
-          
-            <li class="previous">
-              <a href="https://hdyson.github.io/posts/org-babel-conda/" data-toggle="tooltip" data-placement="top" title="Selecting which python to use with org-babel">&larr; Previous Post</a>
-            </li>
-          
-          
-            <li class="next">
-              <a href="https://hdyson.github.io/posts/better-keyboard-part-1/" data-toggle="tooltip" data-placement="top" title="Better Keyboard Part 1">Next Post &rarr;</a>
-            </li>
-          
-        </ul>
-      
-	<script src="https://utteranc.es/client.js"
-		repo="hdyson/hdyson.github.io"
-		issue-term="title"
-		theme="github-light"
-		crossorigin="anonymous"
-		async>
-	</script>
-
-
-
-      
-
+      </div>
     </div>
   </div>
-</div>
 
       
 <footer>
@@ -345,7 +258,7 @@ list needs to be defined before enabling <code>prettify-symbols-mode</code>.</p>
               </li>
           
           <li>
-            <a href="" title="RSS">
+            <a href="/posts/index.xml" title="RSS">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-rss fa-stack-1x fa-inverse"></i>

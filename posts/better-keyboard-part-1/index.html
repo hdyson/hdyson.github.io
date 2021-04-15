@@ -7,10 +7,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Exploring Python Ligatures - Exploring code</title>
+  <title>Better Keyboard Part 1 - Exploring code</title>
   <meta name="description" content="
-Pycharm has some pretty ligature support.  It&#39;d be good to have similar in
-emacs - let&#39;s take a look at how to set that up.">
+This is the first of three opinionated posts on building a better keyboard.
+
+
+Why?  This post will cover both what&#39;s wrong with most keyboards, and why I
+opted for a Corne keyboard.
+
+
+Hardware.  The next post will discuss actually building the keyboard.
+
+
+Software.  The final post will cover configuring the software to suit my needs.
+
+">
   <meta name="author" content="hdyson"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -46,8 +57,8 @@ emacs - let&#39;s take a look at how to set that up.">
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/hdyson.github.io\/posts\/exploring-python-ligatures\/",
-          "name": "Exploring python ligatures"
+          "@id": "https:\/\/hdyson.github.io\/posts\/better-keyboard-part-1\/",
+          "name": "Better keyboard part 1"
         }
     }]
 }
@@ -58,15 +69,15 @@ emacs - let&#39;s take a look at how to set that up.">
   "author": {
     "name" : "hdyson"
   },
-  "headline": "Exploring Python Ligatures",
-  "description" : " Pycharm has some pretty ligature support. It\u0026#39;d be good to have similar in emacs - let\u0026#39;s take a look at how to set that up.\n",
+  "headline": "Better Keyboard Part 1",
+  "description" : " This is the first of three opinionated posts on building a better keyboard.\n  Why? This post will cover both what\u0026#39;s wrong with most keyboards, and why I opted for a Corne keyboard.\n  Hardware. The next post will discuss actually building the keyboard.\n  Software. The final post will cover configuring the software to suit my needs.\n ",
   "inLanguage" : "en",
-  "wordCount":  229 ,
-  "datePublished" : "2021-04-07T20:55:35",
-  "dateModified" : "2021-04-07T20:55:35",
+  "wordCount":  854 ,
+  "datePublished" : "2021-04-14T17:19:15",
+  "dateModified" : "2021-04-14T17:19:15",
   "image" : "https:\/\/hdyson.github.io\/",
-  "keywords" : [ "Emacs, Python" ],
-  "mainEntityOfPage" : "https:\/\/hdyson.github.io\/posts\/exploring-python-ligatures\/",
+  "keywords" : [ "Keyboard" ],
+  "mainEntityOfPage" : "https:\/\/hdyson.github.io\/posts\/better-keyboard-part-1\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/hdyson.github.io\/",
@@ -80,18 +91,35 @@ emacs - let&#39;s take a look at how to set that up.">
 }
 </script>
 
-<meta property="og:title" content="Exploring Python Ligatures" />
+<meta property="og:title" content="Better Keyboard Part 1" />
 <meta property="og:description" content="
-Pycharm has some pretty ligature support.  It&#39;d be good to have similar in
-emacs - let&#39;s take a look at how to set that up.">
-<meta property="og:url" content="https://hdyson.github.io/posts/exploring-python-ligatures/" />
+This is the first of three opinionated posts on building a better keyboard.
+
+
+Why?  This post will cover both what&#39;s wrong with most keyboards, and why I
+opted for a Corne keyboard.
+
+
+Hardware.  The next post will discuss actually building the keyboard.
+
+
+Software.  The final post will cover configuring the software to suit my needs.
+
+">
+<meta property="og:url" content="https://hdyson.github.io/posts/better-keyboard-part-1/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Exploring code" />
 
-  <meta name="twitter:title" content="Exploring Python Ligatures" />
+  <meta name="twitter:title" content="Better Keyboard Part 1" />
   <meta name="twitter:description" content="
-Pycharm has some pretty ligature support.  It&#39;d be good to have similar in
-emacs - let&#39;s take a look at how to set that up.">
+This is the first of three opinionated posts on building a better keyboard.
+
+
+Why?  This post will cover both what&#39;s wrong with most keyboards, and why I
+opted for a Corne keyboard.
+
+
+Hardware. …">
   <meta name="twitter:card" content="summary" />
   <meta name="generator" content="Hugo 0.82.0" />
   <link rel="alternate" href="https://hdyson.github.io/index.xml" type="application/rss+xml" title="Exploring code"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -213,7 +241,7 @@ emacs - let&#39;s take a look at how to set that up.">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="posts-heading">
               
-                <h1>Exploring Python Ligatures</h1>
+                <h1>Better Keyboard Part 1</h1>
               
               
                 <hr class="small">
@@ -234,58 +262,227 @@ emacs - let&#39;s take a look at how to set that up.">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p>
-Pycharm has some pretty ligature support.  It&#39;d be good to have similar in
-emacs - let&#39;s take a look at how to set that up.</p>
-<div id="outline-container-headline-1" class="outline-3">
-<h3 id="headline-1">
-Ligatures for python
+This is the first of three <strong>opinionated</strong> posts on building a better keyboard.</p>
+<ol>
+<li>
+<p>Why?  This post will cover both what&#39;s wrong with most keyboards, and why I
+opted for a <a href="https://github.com/foostan/crkbd">Corne keyboard</a>.</p>
+</li>
+<li>
+<p>Hardware.  The next post will discuss actually building the keyboard.</p>
+</li>
+<li>
+<p>Software.  The final post will cover configuring the software to suit my needs.</p>
+</li>
+</ol>
+<p>
+Just a reminder that most of this post is personal opinion - it&#39;s how I think
+and work, so both the problem being solved and the solution suits me.  If it
+also suits you, that&#39;s fantastic.  If you work in a different way, though,
+these solutions may not be appropriate for you and you may want to take a
+different path, or at least adapt my conclusions.</p>
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Requirements
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">
+Over-riding principle: adapt the computer rather than yourself.
 </h3>
-<div id="outline-text-headline-1" class="outline-text-3">
+<div id="outline-text-headline-2" class="outline-text-3">
 <p>
-So ligature support is built in to emacs, via <code>prettify-symbols-mode</code>.  This
-means we just need to activate this along with <code>python-mode</code>, and then define
-some symbols to replace.</p>
+There&#39;s two extremes for working with a computer.  The first extreme is to
+adapt how you work to suit the constraints provided by your computer.  That&#39;s
+the wrong extreme.  The correct approach is to adapt your computer to suit
+your working patterns.  This extends from fixing the screen brightness to your
+taste, through customising emacs, and culminates in adapting your hardware.</p>
 <p>
-My target is to have ligatures enabled for python mode only, rather than
-globally, which means <code>global-prettify-symbols-mode</code> is not the answer.</p>
-<p>
-By default, in python mode, <code>prettify-symbols</code> replaces <code>lambda</code>, <code>and</code>, and
-<code>or</code> with symbols (check the buffer local variable <code>prettify-symbols-alist</code>
-for the current value in a buffer).  Let&#39;s add a few more symbols.  From <a href="http://www.aliquote.org/post/enliven-your-emacs/">this
-aliquote blog post</a>, there&#39;s a few suitable suggestions:</p>
-<div class="src src-emacs-lisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">    (defun add-python-mode-symbols ()
-	    (<span style="color:#a6e22e">mapc</span> (lambda (pair) (push pair prettify-symbols-alist))
-	     <span style="color:#f92672">&#39;</span>(
-		(<span style="color:#e6db74">&#34;-&gt;&#34;</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">8594</span>)
-		(<span style="color:#e6db74">&#34;=&gt;&#34;</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">8658</span>)
-		(<span style="color:#e6db74">&#34;&lt;=&#34;</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">8804</span>)
-		(<span style="color:#e6db74">&#34;&gt;=&#34;</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">8805</span>)
-		(<span style="color:#e6db74">&#34;&lt;-&#34;</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">8592</span>)
-		(<span style="color:#e6db74">&#34;!=&#34;</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">8800</span>)
-		)))
-
-    (add-hook <span style="color:#e6db74">&#39;python-mode-hook</span> (lambda ()
-				  (add-python-mode-symbols)
-				  (prettify-symbols-mode <span style="color:#66d9ef">t</span>)
-				  ))</code></pre></div>
+Standard keyboards aren&#39;t really fit for purpose, so rather than adapt to
+shoddy keyboards, let&#39;s consider the areas we&#39;d like to improve.</p>
 </div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+Thumbs
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
 <p>
-<a href="http://www.modernemacs.com/post/prettify-mode/">This modern emacs blog post</a> describes using <code>describe-char</code> and <code>insert-char</code>
-to work out the number needed for a particular symbol, and the use of <code>mapc</code>
-for adding the symbols in a sensible manner.  I&#39;ve opted to isolate the
-definitions in a function to make it a little more transparent what is being
-added to the python hook.  I think (but haven&#39;t confirmed) that the symbols
-list needs to be defined before enabling <code>prettify-symbols-mode</code>.</p>
+Thumbs are great.  Don&#39;t believe me?  It&#39;s a <a href="https://www.scifacts.net/human/opposable-thumbs/">scientific fact</a>!  We have two of
+these amazing appendages, and on a normal keyboard, they have 1 key between
+them.  That&#39;s clearly a waste.  So our first requirement is:</p>
+<p>
+<strong>Requirement 1: More keys for the thumbs</strong></p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+Ortholinear
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<p>
+Fingers are pretty good too.  But they don&#39;t bend sideways.  So why are the
+keys on a standard keyboard staggered such that <code>Q</code> isn&#39;t just above <code>A</code>, but
+is up and to the left?  And similarly for all the other keys - they&#39;re
+stagered by row.  But fingers move up and down, not on the diagonals.</p>
+<p>
+In addition, try putting all your fingers on your desk as though you were
+resting your hands.  Notice how the tips of your fingers describe an arc,
+rather than a straight line.  So wouldn&#39;t it be good if your keyboard rows
+followed a similar arc?</p>
+<p>
+<strong>Requirement 2: Column stagger, rather than row stagger</strong></p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
+Split
+</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<p>
+On a conventional keyboard, your shoulders are closed and your wrists are
+angled outwards to get your hands in front of your body and on the keyboard.
+But since your left hand isn&#39;t supposed to be on the right side of the
+keyboard, and vice versa, why not just cut the keyboard in half and have the
+two halves roughly shoulder width apart?</p>
+<p>
+This also means you can move the halves to wherever is more comfortable.  </p>
+<p>
+<strong>Requirement 3: Split keyboard</strong></p>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
+Programmable
+</h3>
+<div id="outline-text-headline-6" class="outline-text-3">
+<p>
+This is driven by the over-riding requirement of being customisable.  The
+keyboard should be programmable.  We can replace caps lock with a control in
+any sensible OS, but why not take this further?  If I want to double tap the
+<code>U</code> key to trigger an emacs re-compile (and I do ☺), I should be able to do
+that.</p>
+<p>
+<strong>Requirement 4: Programmable firmware</strong></p>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
+<h3 id="headline-7">
+Minor requirements
+</h3>
+<div id="outline-text-headline-7" class="outline-text-3">
+<div id="outline-container-headline-8" class="outline-4">
+<h4 id="headline-8">
+Switches
+</h4>
+<div id="outline-text-headline-8" class="outline-text-4">
+<p>
+It&#39;d be good to use quality mechanical switches.  I like a good, satisfying
+clicking sound too.</p>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-4">
+<h4 id="headline-9">
+LEDs
+</h4>
+<div id="outline-text-headline-9" class="outline-text-4">
+<p>
+If I&#39;m going to the effort of building a keyboard, I want it look good.  That
+means adding some bling, in the form of LEDs.  My target is at least 1 LED per
+key.</p>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-4">
+<h4 id="headline-10">
+Fewer keys
+</h4>
+<div id="outline-text-headline-10" class="outline-text-4">
+<p>
+Having argued for more thumb keys, I&#39;m now going to sugget fewer keys for
+the fingers.  I want to limit how far the hands need to move, so want to try a
+keyboard with all the keys on or adjacent to the home row.  This does imply 3
+keys per thumb too: one for the resting position, and another key to each side
+of it.</p>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-4">
+<h4 id="headline-11">
+Assembly
+</h4>
+<div id="outline-text-headline-11" class="outline-text-4">
+<p>
+I know how to use a soldering iron, but I also know enough about using one to
+know that I&#39;m competent with a soldering iron, rather than talented.  So
+something that&#39;s reasonably easy to build would be better.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-3">
+<h3 id="headline-12">
+Not a requirement: RSI
+</h3>
+<div id="outline-text-headline-12" class="outline-text-3">
+<p>
+You&#39;ve probably noticed there&#39;s no mention of RSI prevention above.  I&#39;m
+not in a position to evaluate whether there&#39;s more or less risk of RSI from a
+split, column-staggered, keyboard with fewer keys.  I use a normal keyboard at
+work (unsurprisingly, security people at work aren&#39;t too keen on plugging a
+keyboard with programmable firmware into their devices).  So I think there&#39;s a
+reasonable chance that switching between a normal keyboard and a split
+keyboard will be better than constantly using either, but don&#39;t really have an
+opinion on whether a split keyboard is better or worse for avoiding RSI.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-13" class="outline-2">
+<h2 id="headline-13">
+Summary
+</h2>
+<div id="outline-text-headline-13" class="outline-text-2">
+<p>
+This gives us a list of requirements of:</p>
+<ol>
+<li>
+<p>More thumb keys</p>
+</li>
+<li>
+<p>Column stagger</p>
+</li>
+<li>
+<p>Split keyboard</p>
+</li>
+<li>
+<p>Programmable firmware</p>
+</li>
+</ol>
+<p>And nice to haves of:</p>
+<ol>
+<li>
+<p>Mechanical switches</p>
+</li>
+<li>
+<p>Bling!</p>
+</li>
+<li>
+<p>Fewer keys</p>
+</li>
+<li>
+<p>Easy assembly</p>
+</li>
+</ol>
+<p>This results in the <a href="https://github.com/foostan/crkbd">Corne keyboard</a> being the option that best fits the
+requirements.  There&#39;s many, many other options - take a look in
+<a href="https://www.reddit.com/r/ErgoMechKeyboards/">r/ErgoMechKeyboards</a> if you&#39;d like to see some of the alternatives.  But, for
+me, the Corne was the option that best fit my requirements.</p>
 </div>
 </div>
 
         
           <div class="blog-tags">
             
-              <a href="https://hdyson.github.io//tags/emacs/">Emacs</a>&nbsp;
-            
-              <a href="https://hdyson.github.io//tags/python/">Python</a>&nbsp;
+              <a href="https://hdyson.github.io//tags/keyboard/">Keyboard</a>&nbsp;
             
           </div>
         
@@ -302,13 +499,9 @@ list needs to be defined before enabling <code>prettify-symbols-mode</code>.</p>
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://hdyson.github.io/posts/org-babel-conda/" data-toggle="tooltip" data-placement="top" title="Selecting which python to use with org-babel">&larr; Previous Post</a>
+              <a href="https://hdyson.github.io/posts/exploring-python-ligatures/" data-toggle="tooltip" data-placement="top" title="Exploring Python Ligatures">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://hdyson.github.io/posts/better-keyboard-part-1/" data-toggle="tooltip" data-placement="top" title="Better Keyboard Part 1">Next Post &rarr;</a>
-            </li>
           
         </ul>
       

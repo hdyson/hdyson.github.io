@@ -6,7 +6,29 @@
     <description>Recent content in Posts on Exploring code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Apr 2021 20:55:35 +0100</lastBuildDate><atom:link href="https://hdyson.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Apr 2021 17:19:15 +0100</lastBuildDate><atom:link href="https://hdyson.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Better Keyboard Part 1</title>
+      <link>https://hdyson.github.io/posts/better-keyboard-part-1/</link>
+      <pubDate>Wed, 14 Apr 2021 17:19:15 +0100</pubDate>
+      
+      <guid>https://hdyson.github.io/posts/better-keyboard-part-1/</guid>
+      <description>&lt;p&gt;
+This is the first of three &lt;strong&gt;opinionated&lt;/strong&gt; posts on building a better keyboard.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Why?  This post will cover both what&amp;#39;s wrong with most keyboards, and why I
+opted for a &lt;a href=&#34;https://github.com/foostan/crkbd&#34;&gt;Corne keyboard&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hardware.  The next post will discuss actually building the keyboard.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Software.  The final post will cover configuring the software to suit my needs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
     <item>
       <title>Exploring Python Ligatures</title>
       <link>https://hdyson.github.io/posts/exploring-python-ligatures/</link>
